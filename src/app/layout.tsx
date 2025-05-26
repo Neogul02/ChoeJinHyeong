@@ -2,6 +2,7 @@ import './globals.css'
 import Nav from '@/components/Nav'
 import DarkModeButton from '@/components/DarkModeBtn'
 
+
 export const metadata = {
   title: 'Choe JinHyeong',
   description: "Choe JinHyeong's personal website",
