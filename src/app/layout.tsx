@@ -1,6 +1,5 @@
 import './globals.css'
 import Nav from '@/components/Nav'
-import DarkModeButton from '@/components/DarkModeBtn'
 
 
 export const metadata = {
@@ -10,13 +9,10 @@ export const metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="kr">
-      <body className="antialiased bg-background text-foreground">
-        <div className="w-full max-w-[960px] mx-auto px-4 sm:px-8">
+    <html lang='kr'>
+      <body className='antialiased bg-background text-foreground'>
+        <div className='w-full max-w-[960px] mx-auto px-4 sm:px-8'>
           <Nav />
-          <div className="flex justify-end py-4 absolute right-10 top-3">
-            <DarkModeButton />
-          </div>
           {children}
         </div>
       </body>

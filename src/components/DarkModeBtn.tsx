@@ -10,5 +10,22 @@ export default function DarkModeButton() {
     console.log('[DarkModeBtn] now theme:', theme)
   }, [theme])
 
-  return <button onClick={toggleTheme}>{theme === 'dark' ? '다크 모드' : '라이트 모드'}</button>
+  return (
+    <button
+      onClick={toggleTheme}
+      className='text-lg w-10 h-10'
+    >
+      {theme === 'dark' ? (
+        <img
+          src='/dark-icon.svg'
+          alt='dark-icon'
+        />
+      ) : (
+        <img
+          src='/light-icon.svg'
+          alt='light-icon'
+        />
+      )}
+    </button>
+  )
 }

@@ -1,17 +1,37 @@
 @import 'tailwindcss';
 
+/* 다크모드 */
 :root {
   --background: #232326;
-  --foreground: #b7b7b7;
+  --foreground: #e6e6e6;
+  --Layer: #2c2d2e;
 }
 
+/* 라이트모드 */
 .dark {
-  --background: #b7b7b7;
-  --foreground: #232326;
+  --background: #f3f5f7;
+  --foreground: #191f28;
+  --Layer: #e6e6e6;
 }
 
 body {
   background: var(--background); /* dark 모드 그대로 */
   color: var(--foreground); /* dark 모드의 반대로 */
   font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.cursor-blink::after {
+  content: '|';
+  animation: blink 1s step-start infinite;
+  margin-left: 2px;
 }
