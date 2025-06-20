@@ -7,7 +7,7 @@ export default function DarkModeButton() {
 
   useEffect(() => {
     document.documentElement.classList.toggle('dark', theme === 'dark')
-    console.log('[DarkModeBtn] now theme:', theme)
+    console.log('[DarkModeBtn] current theme:', theme)
   }, [theme])
 
   return (
@@ -17,13 +17,13 @@ export default function DarkModeButton() {
     >
       {theme === 'dark' ? (
         <img
-          src='/dark-icon.svg'
-          alt='dark-icon'
+          src='/light-icon.svg'
+          alt='light-icon'
         />
       ) : (
         <img
-          src='/light-icon.svg'
-          alt='light-icon'
+          src='/dark-icon.svg'
+          alt='dark-icon'
         />
       )}
     </button>

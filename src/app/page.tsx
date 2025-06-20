@@ -5,13 +5,13 @@ export default function Home() {
   return (
     <main className='min-h-screen relative'>
       <section className='flex flex-col-reverse md:flex-row items-center max-w-5xl mx-auto mt-25 px-4'>
-        {/* 텍스트 영역 */}
-        <div className='flex-1 z-10 mt-6 md:mt-0'>
+        {/* 로테이트 텍스트 섹션 */}
+        <section className='flex-1 z-10 ml-3 mt-6 md:mt-0'>
           <CustomRotatingIntro />
-        </div>
+        </section>
 
-        {/* 프로필 이미지 */}
-        <div className='mb-4 md:mb-4 md:ml-8'>
+        {/* 프로필 이미지 섹션 */}
+        <section className='mb-4 md:mb-4 md:ml-8'>
           <img
             src='/profile.png'
             alt='Profile_Image'
@@ -21,7 +21,7 @@ export default function Home() {
               object-cover
             '
           />
-        </div>
+        </section>
       </section>
 
       <section className='flex justify-center mt-10 px-4'>
@@ -33,6 +33,11 @@ export default function Home() {
       </section>
 
       <section className='max-w-5xl mx-auto mt-12 px-4'>{/* 기술 스택, 이력, 프로젝트, 교육 섹션 자리 */}</section>
+
+      {/* 푸터 섹션 */}
+      <footer>
+        
+      </footer>
     </main>
   )
 }
