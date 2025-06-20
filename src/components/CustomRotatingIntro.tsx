@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react'
 
 const skills_texts = ['Next.js', 'React', 'TypeScript', 'JavaScript']
-const names_texts = ['최진형', 'ChoeJinHyeong', '崔眞亨', '너굴먹', 'Neogul02']
+const names_texts = ['최진형', 'ChoeJinHyeong', '崔眞亨', 'チェ・ジンヒョン', '너굴먹', 'Neogul02']
 
 export default function CustomRotatingIntro() {
   const [skillIndex, setSkillIndex] = useState(0)
@@ -25,7 +25,7 @@ export default function CustomRotatingIntro() {
       } else {
         setTimeout(() => {
           setSkillIndex((prev) => (prev + 1) % skills_texts.length)
-        }, 4000) // 다 찍고 난 후 다음 단어로 넘어가는 시간
+        }, 3000) // 다 찍고 난 후 다음 단어로 넘어가는 시간
       }
     }
 
@@ -40,13 +40,14 @@ export default function CustomRotatingIntro() {
 
     const typeName = () => {
       if (i <= currentName.length) {
+        // console.log(`Typing name: ${currentName.slice(0, i)}`) // 디버깅용 로그
         setNameText(currentName.slice(0, i))
         i++
         setTimeout(typeName, 60) // 타이핑 속도
       } else {
         setTimeout(() => {
           setNameIndex((prev) => (prev + 1) % names_texts.length)
-        }, 5000) // 다 찍고 난 후 다음 이름으로 넘어가는 시간
+        }, 4000) // 다 찍고 난 후 다음 이름으로 넘어가는 시간
       }
     }
 
@@ -73,15 +74,25 @@ export default function CustomRotatingIntro() {
       안녕하세요!
       <br />
       <strong>
-        <span className='underline cursor-blink' style={{color:"#3182f6"}}>{skillText}</span>
+        <span
+          className='underline cursor-blink'
+          style={{ color: '#3182f6' }}
+        >
+          {skillText}
+        </span>
       </strong>
-      {` 를 좋아하는`}
+      {`를 좋아하는`}
       <br />
       {`개발자 `}
       <strong>
-        <span className='underline cursor-blink'style={{color:"#3182f6"}}>{nameText}</span>
+        <span
+          className='underline cursor-blink'
+          style={{ color: '#3182f6' }}
+        >
+          {nameText}
+        </span>
       </strong>
-      {` 입니다.`}
+      {`입니다.`}
     </div>
   )
 }
