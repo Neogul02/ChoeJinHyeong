@@ -1,17 +1,17 @@
 @import 'tailwindcss';
 
-/* 라이트모드 */
+/* 다크모드(기본) */
 :root {
-  --background: #f3f5f7;
-  --foreground: #191f28;
-  --layer: #e6e6e6;
-}
-
-/* 다크모드 */
-.dark {
   --background: #232326;
   --foreground: #e6e6e6;
   --layer: #2c2d2e;
+}
+
+/* 라이트모드 */
+.dark {
+  --background: #f3f5f7;
+  --foreground: #191f28;
+  --layer: #e6e6e6;
 }
 
 body {

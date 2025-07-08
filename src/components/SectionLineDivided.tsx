@@ -1,4 +1,4 @@
-export default function SectionLine({ text }: { text?: string }) {
+export default function SectionLineDivided({ text }: { text?: string }) {
   return (
     <div>
       {text && <div className='text-[24px] font-bold'>{text}</div>}
