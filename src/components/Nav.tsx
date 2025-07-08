@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import DarkModeButton from '@/components/DarkModeBtn'
+import DarkModeButton from '@/components/DarkModeButton'
 
 export default function Nav() {
   const [mounted, setMounted] = useState(false)
@@ -13,38 +13,40 @@ export default function Nav() {
 
   if (!mounted) return null
 
+  const linkClassName = `text-lg cursor-pointer transition-colors duration-300 hover:text-[#3182f6]`
+
   return (
     <nav className='flex justify-between items-center p-4'>
       <div className='text-2xl font-bold cursor-pointer whitespace-nowrap'>
         <Link href='/'>
-          <span className='block md:hidden'>C</span>
-          <span className='hidden md:block'>ChoeJinHyeong</span>
+          <span className='block md:hidden transition-colors duration-300 hover:text-[#3182f6]'>CJH</span>
+          <span className='hidden md:block transition-colors duration-300 hover:text-[#3182f6]'>ChoeJinHyeong</span>
         </Link>
       </div>
-      <div className='flex space-x-3 md:space-x-5 items-center'>
-        <Link
-          href='/about'
-          className='text-lg cursor-pointer'
-        >
-          About
-        </Link>
+      <div className='flex space-x-3 md:space-x-5 items-center '>
         <Link
           href='https://www.linkedin.com/in/jinhyeong-choe-85195433a/'
-          className='text-lg cursor-pointer'
+          className={linkClassName}
         >
           LinkedIn
         </Link>
         <Link
           href='https://github.com/Neogul02'
-          className='text-lg cursor-pointer'
+          className={linkClassName}
         >
           Github
         </Link>
         <Link
           href='https://neogul02.tistory.com/'
-          className='text-lg cursor-pointer'
+          className={linkClassName}
         >
           Blog
+        </Link>
+        <Link
+          href='/about'
+          className={linkClassName}
+        >
+          About
         </Link>
 
         <div className='flex items-center '>
