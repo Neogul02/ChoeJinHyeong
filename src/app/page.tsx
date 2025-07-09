@@ -12,7 +12,6 @@ import Projects from '@/components/contents/Projects'
 import Education from '@/components/contents/Education'
 import AboutMore from '@/components/contents/AboutMore'
 
-
 export default function Home() {
   return (
     <main className='min-h-screen relative'>
@@ -25,7 +24,7 @@ export default function Home() {
         {/* 프로필 이미지 섹션 */}
         <section className='mb-4 md:mb-4 md:ml-8'>
           <img
-            src='/profile.png'
+            src='/images/profile.png'
             alt='Profile_Image'
             className='
               w-[300px]
