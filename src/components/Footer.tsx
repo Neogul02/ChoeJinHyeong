@@ -12,7 +12,7 @@ export default function Footer() {
         color: theme === 'dark' ? '#e6e6e6' : '#191f28',
       }}
     >
-      <div className='text-lg lineheight-6 text-center'>
+      <div className='text-[16px] lineheight-6 text-center'>
         Copyright 2025 | ChoeJinHyeong all right reserved
         <br />
         @Powered by Neogul02 | For muffie
