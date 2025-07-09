@@ -13,7 +13,7 @@ export default function About() {
         {/* 프로필 이미지 */}
         <div className='mb-4 md:mb-4 md:ml-8'>
           <img
-            src='/profile.png'
+            src='images/profile.png'
             alt='Profile_Image'
             className='
               w-[300px]
