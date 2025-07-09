@@ -7,7 +7,7 @@ export default function Education() {
         <div className='w-1/2 pr-6'>
           <div className='text-[22px] font-bold'>강남대학교</div>
           <div className='text-[16px] font-bold ml-3'>
-            <div>2020.03 ~ 2026.02 졸업예정</div>
+            <div>2020.03 ~ 2026.02 졸업 예정</div>
             <div className='font-light'>소프트웨어학과</div>
           </div>
         </div>
@@ -15,7 +15,6 @@ export default function Education() {
           <div className='text-[16px] font-medium '>
             <div>
               · 전공학점 4.08/4.5 <br />
-              <br />
               · 4~8학기 연속 성적 우수 장학생 선발 <br />
             </div>
           </div>
