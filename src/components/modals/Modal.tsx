@@ -3,9 +3,12 @@ interface ModalProps {
   onClose: () => void
   children: React.ReactNode
   style?: React.CSSProperties
+  onPrevious?: () => void
+  onNext?: () => void
+  showNavigation?: boolean
 }
 
-export default function Modal({ open, onClose, children, style }: ModalProps) {
+export default function Modal({ open, onClose, children, style, onPrevious, onNext, showNavigation = false }: ModalProps) {
   if (!open) return null
 
   return (
@@ -25,10 +28,36 @@ export default function Modal({ open, onClose, children, style }: ModalProps) {
 
         {/* 닫기 버튼 */}
         <button
-          className='absolute top-4 right-7 hover:text-white text-4xl cursor-pointer'
+          className='absolute top-4 right-8 hover:text-white text-4xl cursor-pointer'
           onClick={onClose}
           aria-label='닫기'
         >{`×`}</button>
+
+        {/* 네비게이션 버튼 */}
+        {showNavigation && (
+          <>
+            {/* 이전 버튼 */}
+            {onPrevious && (
+              <button
+                className='absolute left-4 top-1/2 transform -translate-y-1/2 hover:text-white text-3xl cursor-pointer p-2 rounded-full transition-colors'
+                onClick={onPrevious}
+                aria-label='이전 프로젝트'
+              >
+                {`‹`}
+              </button>
+            )}
+            {/* 다음 버튼 */}
+            {onNext && (
+              <button
+                className='absolute right-4 top-1/2 transform -translate-y-1/2 hover:text-white text-3xl cursor-pointer p-2 rounded-full  transition-colors'
+                onClick={onNext}
+                aria-label='다음 프로젝트'
+              >
+                {`›`}
+              </button>
+            )}
+          </>
+        )}
         <style
           jsx
           global

@@ -14,6 +14,21 @@ export default function Projects() {
   const [openModal, setOpenModal] = useState<number | null>(null)
   const { theme } = useThemeStore()
 
+  // 네비게이션 함수들
+  const handlePrevious = () => {
+    if (openModal !== null) {
+      const prevIndex = openModal === 0 ? 3 : openModal - 1
+      setOpenModal(prevIndex)
+    }
+  }
+
+  const handleNext = () => {
+    if (openModal !== null) {
+      const nextIndex = openModal === 3 ? 0 : openModal + 1
+      setOpenModal(nextIndex)
+    }
+  }
+
   // 카드와 모달에 적용할 스타일
   const cardStyle = {
     backgroundColor: theme === 'dark' ? '#2c2d2e' : '#e6e6e6',
@@ -83,6 +98,9 @@ export default function Projects() {
         open={openModal === 0}
         onClose={() => setOpenModal(null)}
         style={cardStyle}
+        onPrevious={handlePrevious}
+        onNext={handleNext}
+        showNavigation={true}
       >
         <Project_Portfolio />
       </Modal>
@@ -90,6 +108,9 @@ export default function Projects() {
         open={openModal === 1}
         onClose={() => setOpenModal(null)}
         style={cardStyle}
+        onPrevious={handlePrevious}
+        onNext={handleNext}
+        showNavigation={true}
       >
         <Project_Likelion />
       </Modal>
@@ -97,6 +118,9 @@ export default function Projects() {
         open={openModal === 2}
         onClose={() => setOpenModal(null)}
         style={cardStyle}
+        onPrevious={handlePrevious}
+        onNext={handleNext}
+        showNavigation={true}
       >
         <Project_Hanamory />
       </Modal>
@@ -104,6 +128,9 @@ export default function Projects() {
         open={openModal === 3}
         onClose={() => setOpenModal(null)}
         style={cardStyle}
+        onPrevious={handlePrevious}
+        onNext={handleNext}
+        showNavigation={true}
       >
         <Project_Runaway />
       </Modal>
