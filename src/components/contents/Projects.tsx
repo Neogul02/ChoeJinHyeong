@@ -41,6 +41,7 @@ export default function Projects() {
       title: 'Portfolio',
       period: '2025.05 - 2025.06',
       image: '',
+      bgColor: theme === 'dark' ? '#e6e6e6' : '#2c2d2e',
     },
     {
       id: 1,
@@ -82,7 +83,12 @@ export default function Projects() {
                   priority={false}
                 />
               ) : (
-                <span>{project.title}</span>
+                <div
+                  style={{ backgroundColor: project.bgColor }}
+                  className='w-full h-full justify-center items-center flex text-center text-[20px]'
+                >
+                  <span style={{ color: theme === 'dark' ? '#2c2d2e' : '#e6e6e6' }}>{project.title}</span>
+                </div>
               )}
             </div>
             <div className='text-[22px] font-semibold p-2'>

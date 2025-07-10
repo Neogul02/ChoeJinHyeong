@@ -79,17 +79,17 @@ export default function Project_Portfolio() {
       <div className='grid grid-cols-1 md:grid-cols-2 gap-6 my-10'>
         <Image
           src='/images/portfolio/portfolio_wireframe.png'
-          alt='portfolio_darkmode'
-          width={600}
-          height={400}
+          alt='portfolio_wireframe'
+          width={1580}
+          height={1370}
           className='w-full h-auto rounded-4xlshadow-lg '
           loading='lazy'
         />
         <Image
           src='/images/portfolio/portfolio_figma.png'
           alt='portfolio_figma'
-          width={600}
-          height={400}
+          width={1580}
+          height={1370}
           className='w-full h-auto rounded-4xl shadow-lg '
           loading='lazy'
         />
@@ -97,9 +97,10 @@ export default function Project_Portfolio() {
       <Image
         src='/images/portfolio/portfolio_designSystem.png'
         alt='portfolio_designSystem'
-        width={600}
-        height={400}
-        className='w-full h-auto rounded-4xl mb-8 shadow-lg '
+        width={1280}
+        height={720}
+        quality={100}
+        className='w-full rounded-4xl mb-8 shadow-lg '
         loading='lazy'
       />
       <SectionLine />

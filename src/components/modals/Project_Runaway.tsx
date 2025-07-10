@@ -78,15 +78,16 @@ export default function Project_Runaway() {
       <Image
         src='/images/runaway/runaway_1.png'
         alt='Runaway_1'
-        width={600}
-        height={400}
+        width={1920}
+        height={1080}
+        quality={100}
         className='w-full h-auto rounded-4xl mb-4 shadow-lg'
       />
       <Image
         src='/images/runaway/runaway_2.png'
         alt='Runaway_2'
-        width={600}
-        height={400}
+        width={1920}
+        height={1080}
         className='w-full h-auto rounded-4xl mb-4 shadow-lg'
       />
       <SectionLine />

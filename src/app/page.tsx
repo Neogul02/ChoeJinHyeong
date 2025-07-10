@@ -14,7 +14,7 @@ import AboutMore from '@/components/contents/AboutMore'
 
 export default function Home() {
   return (
-    <main className='min-h-screen relative'>
+    <main className='min-h-screen relative animate-fadeIn'>
       <section className='flex flex-col-reverse md:flex-row items-center max-w-5xl mx-auto mt-25 px-4'>
         {/* 로테이트 텍스트 섹션 */}
         <section className='flex-1 z-10 ml-3 mt-6 md:mt-0'>

@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import DarkModeButton from '@/components/DarkModeButton'
 
 export default function Nav() {
   const [mounted, setMounted] = useState(false)
@@ -55,14 +54,7 @@ export default function Nav() {
           Github
         </Link>
 
-        <div className='flex items-center '>
-          <div className='hidden md:block absolute right-15 top-5'>
-            <DarkModeButton />
-          </div>
-          <div className='block md:hidden absolute top-15 right-10'>
-            <DarkModeButton />
-          </div>
-        </div>
+        
       </div>
     </nav>
   )
