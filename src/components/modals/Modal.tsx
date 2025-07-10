@@ -12,7 +12,7 @@ export default function Modal({ open, onClose, children, style }: ModalProps) {
     <div className='fixed inset-0 z-10 flex items-center justify-center overflow-auto'>
       {/* 배경 */}
       <div
-        className='absolute inset-0 bg-[#00000099] bg-opacity-50 transition-opacity'
+        className='absolute inset-0 bg-[#00000066] bg-opacity-50 transition-opacity'
         onClick={onClose}
       />
       {/* 모달 본체 */}
@@ -21,7 +21,7 @@ export default function Modal({ open, onClose, children, style }: ModalProps) {
         style={style}
       >
         {/* 스크롤 가능한 영역 */}
-        <div className='overflow-auto no-scrollbar max-w-[100vh] max-h-[80vh] py-10 px-30'>{children}</div>
+        <div className='overflow-auto no-scrollbar max-w-[120vh] max-h-[80vh] py-10 px-30'>{children}</div>
 
         {/* 닫기 버튼 */}
         <button
