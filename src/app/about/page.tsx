@@ -1,9 +1,9 @@
 import React from 'react'
 import CustomRotatingIntro from '@/components/CustomRotatingIntro'
 
-import SectionLine from '@/components/SectionLine'
-import Stack from '@/components/contents/Stack'
-import Education from '@/components/contents/Education'
+// import SectionLine from '@/components/SectionLine'
+// import Stack from '@/components/contents/Stack'
+// import Education from '@/components/contents/Education'
 
 export default function About() {
   return (
@@ -47,7 +47,6 @@ export default function About() {
         {/* <SectionLine text='취미' />
 
         <SectionLine text='장학/수상내역' /> */}
-
       </section>
     </main>
   )
