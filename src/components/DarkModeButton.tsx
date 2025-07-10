@@ -13,20 +13,21 @@ export default function DarkModeButton() {
   return (
     <button
       onClick={toggleTheme}
-      className="text-lg w-10 h-10 transition-colors duration-300"
+      className={`rounded-full w-14 h-14 flex items-center justify-center shadow-lg transition-transform hover:scale-110
+        ${theme === 'dark' ? 'bg-[#2c2d2e]' : 'bg-[#e6e6e6]'}`}
     >
       {theme === 'light' ? (
-      <img
-        src="/dark-icon.svg"
-        alt="light-icon"
-        className="transition-transform hover:scale-110"
-      />
+        <img
+          src='/dark-icon.svg'
+          alt='dark-mode'
+          className='w-8 h-8'
+        />
       ) : (
-      <img
-        src="/light-icon.svg"
-        alt="dark-icon"
-        className="transition-transform hover:scale-110"
-      />
+        <img
+          src='/light-icon.svg'
+          alt='light-mode'
+          className='w-8 h-8'
+        />
       )}
     </button>
   )

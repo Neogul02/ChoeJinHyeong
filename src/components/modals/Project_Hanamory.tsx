@@ -64,8 +64,8 @@ export default function Project_Hanamory() {
       <Image
         src='/images/hanamory/hanamory_Preview.gif'
         alt='likelion_Preview'
-        width={600}
-        height={400}
+        width={1920}
+        height={1080}
         className='w-full h-auto rounded-4xl mb-4'
         loading='lazy'
       />
@@ -73,16 +73,16 @@ export default function Project_Hanamory() {
         <Image
           src='/images/hanamory/2.jpg'
           alt='likelion_F1'
-          width={300}
-          height={200}
+          width={1920}
+          height={1080}
           className='w-full h-auto rounded-4xl mb-4'
           loading='lazy'
         />
         <Image
           src='/images/hanamory/3.jpg'
           alt='likelion_F1'
-          width={300}
-          height={200}
+          width={1920}
+          height={1080}
           className='w-full h-auto rounded-4xl mb-4'
           loading='lazy'
         />
@@ -99,8 +99,8 @@ export default function Project_Hanamory() {
         <Image
           src='/images/hanamory/hanamory_F1.png'
           alt='likelion_F1'
-          width={600}
-          height={300}
+          width={1920}
+          height={1080}
           className=' rounded-4xl mb-4 u'
           loading='lazy'
         />
@@ -112,8 +112,8 @@ export default function Project_Hanamory() {
         <Image
           src='/images/hanamory/hanamory_logic.png'
           alt='likelion_logic'
-          width={600}
-          height={400}
+          width={1920}
+          height={1080}
           className=' rounded-4xl mb-4 pt-2'
           loading='lazy'
         />

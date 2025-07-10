@@ -1,6 +1,10 @@
 import React from 'react'
 import CustomRotatingIntro from '@/components/CustomRotatingIntro'
 
+import SectionLine from '@/components/SectionLine'
+import Stack from '@/components/contents/Stack'
+import Education from '@/components/contents/Education'
+
 export default function About() {
   return (
     <main className='min-h-screen relative'>
@@ -13,7 +17,7 @@ export default function About() {
         {/* 프로필 이미지 */}
         <div className='mb-4 md:mb-4 md:ml-8'>
           <img
-            src='images/profile.png'
+            src='/images/profile.png'
             alt='Profile_Image'
             className='
               w-[300px]
@@ -25,19 +29,26 @@ export default function About() {
       </section>
       <section className='flex flex-col text-[22px] font-bold p-[16px]'>
         <div>
-          Name. <span className='font-light'>최진형 </span>{' '}
+          Name. <span className='font-light'>최진형 </span>
         </div>
 
         <div>
-          Email. <span className='font-light'>wlsgud2414@naver.com</span>{' '}
+          Email. <span className='font-light'>wlsgud2414@naver.com</span>
         </div>
 
         <div>
-          Residence. <span className='font-light'>Seoul, South Korea </span>{' '}
+          Residence. <span className='font-light'>Seoul, South Korea </span>
         </div>
       </section>
 
-      <section className='max-w-5xl mx-auto mt-12 px-4'>{/* 기술 스택, 이력, 프로젝트, 교육 섹션 자리 */}</section>
+      <section className='max-w-5xl mx-auto mt-12 px-4'>
+        {/* 기술 스택, 이력, 프로젝트, 교육 섹션 자리 */}
+
+        {/* <SectionLine text='취미' />
+
+        <SectionLine text='장학/수상내역' /> */}
+
+      </section>
     </main>
   )
 }

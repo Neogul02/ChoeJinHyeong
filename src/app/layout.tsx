@@ -2,6 +2,7 @@ import './globals.css'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 
+import DarkModeButton from '@/components/DarkModeButton'
 import ScrollToTopButton from '@/components/ScrollToTopButton'
 
 export const metadata = {
@@ -14,14 +15,16 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang='kr'>
       <body className='antialiased bg-background text-foreground'>
         {/* Sub */}
-        <div className='fixed bottom-4 right-4 z-50'>
+        <div className='fixed bottom-4 right-4 z-50 flex gap-3'>
+          <DarkModeButton />
           <ScrollToTopButton />
         </div>
 
         {/* Contents */}
         <div className='w-full max-w-[960px] mx-auto px-4 sm:px-8'>
           <Nav />
-          {children}
+          <div className='page-transition'>{children}</div>
+
           <Footer />
         </div>
       </body>

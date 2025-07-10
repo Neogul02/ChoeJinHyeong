@@ -1,4 +1,3 @@
-// 기술 스택
 import Link from 'next/link'
 
 export default function Activities() {
