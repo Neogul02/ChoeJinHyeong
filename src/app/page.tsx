@@ -35,7 +35,7 @@ export default function Home() {
         </section>
       </section>
 
-      <section className='flex justify-center mt-10 px-4'>
+      <section className='flex justify-center my-20'>
         <p className='text-center text-base md:text-[20px] leading-relaxed max-w-2xl'>
           기능을 넘어, 사용자에게 어떻게 전달할지를 고민하는 개발자 최진형입니다.
           <br />
