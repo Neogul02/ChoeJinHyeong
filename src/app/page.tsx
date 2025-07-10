@@ -39,7 +39,7 @@ export default function Home() {
         <p className='text-center text-base md:text-[20px] leading-relaxed max-w-2xl'>
           기능을 넘어, 사용자에게 어떻게 전달할지를 고민하는 개발자 최진형입니다.
           <br />
-          사용자 경험에서 출발하고, 팀과의 소통을 통해 더 나은 UI/UX를 만들어갑니다.
+          기술은 도구일 뿐, 개발의 목표는 사람에게 닿는 경험이라 생각합니다.
         </p>
       </section>
 

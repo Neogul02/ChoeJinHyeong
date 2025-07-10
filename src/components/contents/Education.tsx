@@ -14,7 +14,7 @@ export default function Education() {
         <div className='w-1/2 pl-5 pt-3 pr-15'>
           <div className='text-[16px] font-medium '>
             <div>
-              · 전공학점 4.08/4.5 <br />
+              · 전공학점 3.91/4.5 <br />
               · 4-8학기 연속 성적 우수 장학생 선발 <br />
             </div>
           </div>

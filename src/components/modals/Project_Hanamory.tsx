@@ -4,7 +4,7 @@ import SectionLine from '../SectionLine'
 export default function Project_Hanamory() {
   return (
     <div className='animate-fadeIn'>
-      <div className='text-[24px] font-bold mb-2'>Hanamory - AI 꽃다발 인식 서비스</div>
+      <div className='text-[24px] font-bold mb-2'>Hanamory: AI 꽃다발 인식 서비스</div>
       <div className='text-[18px] mb-2'>2025.03 ~ 개발 중</div>
       <div className='text-[16px] mb-2'>개인 프로젝트</div>
       <div className='text-[16px] font-bold'>
@@ -46,17 +46,17 @@ export default function Project_Hanamory() {
       </div>
       <SectionLine />
       <div className='text-[20px] font-bold my-2'>다음 기술 스택을 사용했어요</div>
-      <div className='text-[16px] font-bold m-2'>Next.js</div>
+      <div className='text-[16px] font-bold ml-2'>Next.js</div>
       <div className='ml-2'>· AI 모델의 응답 시간이 상대적으로 길 수 있다는 점을 고려해, SEO 최적화와 빠른 초기 렌더링을 위해 SSR과 CSR을 하이브리드로 쉽게 적용할 수 있는 Next.js를 사용했어요.</div>
-      <div className='text-[16px] font-bold mt-5 m-2'>YOLOv5</div>
+      <div className='text-[16px] font-bold mt-5 ml-2'>YOLOv5</div>
       <div className='ml-2'>
         · Roboflow에서 직접 수집하고 라벨링한 꽃 이미지 데이터셋을 기반으로, YOLOv5를 커스텀 학습해 mAP 약 0.72의 성능을 달성했어요.
         <br />· 모델 학습시 하이퍼파라미터를 조정해가며 F1 Curve와 결과 샘플 이미지를 통해 모델 성능을 분석하며 학습했어요.
       </div>
-      <div className='text-[16px] font-bold mt-5 m-2'>Flask</div>
+      <div className='text-[16px] font-bold mt-5 ml-2'>Flask</div>
       <div className='ml-2'> · YOLOv5로 학습한 AI 모델을 REST API로 배포하기 위해 Flask를 사용해 추론 서버를 구현했어요.</div>
       <div className='ml-2'>· 모델 학습시 Python 언어를 사용했기에, node.js가 아닌 python을 사용하는 서버 프레임워크를 사용했어요.</div>
-      <div className='text-[16px] font-bold mt-5 m-2'>Docker</div>
+      <div className='text-[16px] font-bold mt-5 ml-2'>Docker</div>
       <div className='ml-2 '>· Flask 백엔드와 학습시킨 YOLOv5 모델을 하나의 Docker 컨테이너로 패키징해 AWS EC2 서버 위에서 배포해 구동 환경 일관성과 코드 유지보수성을 챙겼어요.</div>
 
       <SectionLine />

@@ -30,19 +30,19 @@ export default function Projects() {
     {
       id: 1,
       title: 'LikelionKNU: 부원 리쿠르팅 서비스',
-      period: '2025.01 - 2025.03',
+      period: '2025.01 - 2025.04',
       image: '/images/likelion/likelion_main.png',
     },
     {
       id: 2,
       title: 'Hanamory: AI 꽃다발 인식 서비스',
       period: '2025.03 ~ 개발 중',
-      image: '/images/hanamory/hanamory_main2.jpg',
+      image: '/images/hanamory/hanamory_main.jpg',
     },
     {
       id: 3,
       title: '도망가자: 재난상황 대피소 제공 서비스 ',
-      period: '2025.03 ~ 2025.04',
+      period: '2025.02 ~ 2025.04',
       image: '/images/runaway/runaway_main.png',
     },
   ]

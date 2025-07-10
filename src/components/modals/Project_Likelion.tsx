@@ -4,8 +4,8 @@ import SectionLine from '../SectionLine'
 export default function Project_Likelion() {
   return (
     <div className='animate-fadeIn'>
-      <div className='text-[24px] font-bold mb-2'>LikeLionKNU - 멋쟁이사자처럼 부원 리쿠르팅 사이트</div>
-      <div className='text-[18px] mb-2'>2025.01 ~ 2025.04 / 배포 중</div>
+      <div className='text-[24px] font-bold mb-2'>LikeLionKNU: 멋쟁이사자처럼 부원 리쿠르팅 사이트</div>
+      <div className='text-[18px] mb-2'>2025.01 ~ 2025.04 </div>
       <div className='text-[16px] mb-2'>Frontend 3, Backend 4, Design 1</div>
       <div className='text-[16px] font-bold'>
         <a
@@ -17,7 +17,7 @@ export default function Project_Likelion() {
           {`Link->`}
         </a>
         <a
-          href='https://github.com/likelionknu/Likelion13-FE'
+          href='https://github.com/RunawayKNU/FE'
           target='_blank'
           rel='noopener noreferrer'
           className='text-[#3182f6] hover:underline m-2'
@@ -25,7 +25,7 @@ export default function Project_Likelion() {
           {`GitHub FE->`}
         </a>
         <a
-          href='https://github.com/likelionknu/Likelion13-BE'
+          href='https://github.com/RunawayKNU/BE'
           target='_blank'
           rel='noopener noreferrer'
           className='text-[#3182f6] hover:underline m-2'
