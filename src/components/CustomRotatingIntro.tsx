@@ -2,7 +2,8 @@
 import { useEffect, useState } from 'react'
 
 const skills_texts = ['Next.js', 'React', 'TypeScript', 'JavaScript']
-const names_texts = ['최진형', 'ChoeJinHyeong', '崔眞亨', 'チェ・ジンヒョン', '너굴먹', 'Neogul02']
+const names_texts = ['ChoeJinHyeong','チェ・ジンヒョン']
+// const names_texts = ['최진형', 'ChoeJinHyeong', '崔眞亨', 'チェ・ジンヒョン', '너굴먹', 'Neogul02']
 
 export default function CustomRotatingIntro() {
   const [skillIndex, setSkillIndex] = useState(0)
@@ -62,7 +63,8 @@ export default function CustomRotatingIntro() {
         md:max-w-[500px]
         min-h-[120px]
         text-[22px] 
-        md:text-[40px] 
+        font-bold
+        md:text-[38px] 
         leading-[32px] 
         md:leading-[57px] 
         inline-block 
@@ -92,7 +94,7 @@ export default function CustomRotatingIntro() {
           {nameText}
         </span>
       </strong>
-      {`입니다.`}
+      {`입니다`}
     </div>
   )
 }
