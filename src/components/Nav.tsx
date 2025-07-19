@@ -16,6 +16,7 @@ export default function Nav() {
 
   return (
     <nav className='flex justify-between items-center p-4'>
+      
       <div className='text-2xl font-bold cursor-pointer whitespace-nowrap'>
         <Link href='/'>
           <span className='block md:hidden transition-colors duration-300 hover:text-[#3182f6]'>CJH</span>

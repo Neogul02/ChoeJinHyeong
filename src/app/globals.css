@@ -17,7 +17,7 @@
 body {
   background: var(--background); /* dark 모드 그대로 */
   color: var(--foreground); /* dark 모드의 반대로 */
-  font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
 }
 
 
