@@ -12,7 +12,7 @@ export default function Stack() {
             <div> · TypeScript</div>
             <div> · Zustand</div>
             <div> · Next 🍅</div>
-            <div> · Tailwind CSS 🍅</div>
+            <div> · Tailwind 🍅</div>
           </div>
         </div>
         <div className='w-1/2 md:pl-10'>
