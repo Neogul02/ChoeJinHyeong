@@ -1,9 +1,6 @@
 import React from 'react'
 import CustomRotatingIntro from '@/components/CustomRotatingIntro'
 
-import SectionLine from '@/components/SectionLine'
-import SectionLineDivided from '@/components/SectionLineDivided'
-
 export default function About() {
   return (
     <main className='min-h-screen relative animate-fadeIn'>
