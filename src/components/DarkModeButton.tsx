@@ -6,16 +6,15 @@ export default function DarkModeButton() {
   const { theme, toggleTheme } = useThemeStore()
 
   useEffect(() => {
-    document.documentElement.classList.toggle('dark', theme === 'light')
+    document.documentElement.classList.toggle('dark', theme === 'dark')
     console.log('[DarkModeBtn] current theme:', theme)
   }, [theme])
 
   return (
     <button
       onClick={toggleTheme}
-      className={`rounded-full w-14 h-14 flex items-center justify-center shadow-lg transition-transform hover:scale-110
-        ${theme === 'dark' ? 'bg-[#2c2d2e]' : 'bg-[#e6e6e6]'}`}
-    >
+      className={`rounded-full w-14 h-14 flex items-center justify-center shadow-lg transition-transform hover:scale-110 cursor-pointer
+        ${theme === 'dark' ? 'bg-[#2c2d2e]' : 'bg-[#e6e6e6]'}`}>
       {theme === 'light' ? (
         <img
           src='/dark-icon.svg'

@@ -2,6 +2,30 @@
 export default function Activities() {
   return (
     <section>
+      {/* Meta 인턴십 */}
+      <div className='flex flex-row justify-between my-10 ml-10'>
+        <div className='w-1/2 pr-6'>
+          <div className='text-[22px] font-bold'>Intern In Meta</div>
+          <div className='text-[16px] font-bold ml-3'>
+            <div>2025.07 ~ 2025.08</div>
+            <div className='font-light'>응용SW개발 파트</div>
+          </div>
+        </div>
+        <div className='w-1/2 pl-5 pt-3 pr-15'>
+          <div className='text-[16px] font-medium '>
+            <div>
+              <br />· React Hooks, Recoil 상태관리를 활용한 효율적인 컴포넌트 설계 및 상태 관리
+              <br />
+              <br />· JEST를 이용한 단위 테스트 작성 및 Storybook을 통한 컴포넌트 테스트 환경 구축
+              <br />
+              <br />· GitHub Pages, Netlify를 활용한 배포 및 CI/CD 파이프라인 학습
+              <br />
+              <br />· Agile Scrum 기법과 Kanban 보드를 사용한 프로젝트 관리, Git Flow 브랜치 전략 적용
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* 멋사 */}
       <div className='flex flex-row justify-between my-10 ml-10'>
         <div className='w-1/2 pr-6'>
@@ -23,8 +47,7 @@ export default function Activities() {
                 href='https://bit.ly/4lKIXPW'
                 target='_blank'
                 rel='noopener noreferrer'
-                className='text-[#3182f6] hover:underline m-2'
-              >
+                className='text-[#3182f6] hover:underline m-2'>
                 프론트엔드 세션 자료
               </a>
               를 직접 기획, 제작 및 운영 <br />

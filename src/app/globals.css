@@ -1,25 +1,24 @@
 @import 'tailwindcss';
 
-/* 다크모드(기본) */
+/* 라이트모드(기본) */
 :root {
-  --background: #232326;
-  --foreground: #e6e6e6;
-  --layer: #2c2d2e;
-}
-
-/* 라이트모드 */
-.dark {
   --background: #f3f5f7;
   --foreground: #191f28;
   --layer: #e6e6e6;
 }
 
-body {
-  background: var(--background); /* dark 모드 그대로 */
-  color: var(--foreground); /* dark 모드의 반대로 */
-  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+/* 다크모드 */
+.dark {
+  --background: #232326;
+  --foreground: #e6e6e6;
+  --layer: #2c2d2e;
 }
 
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+}
 
 @keyframes blink {
   0%,
