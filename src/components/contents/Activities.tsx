@@ -1,7 +1,7 @@
 // 기술 스택
 export default function Activities() {
   return (
-    <section>
+    <section className='mb-20'>
       {/* Meta 인턴십 */}
       <div className='flex flex-row justify-between my-10 ml-10'>
         <div className='w-1/2 pr-6'>
@@ -14,13 +14,11 @@ export default function Activities() {
         <div className='w-1/2 pl-5 pt-3 pr-15'>
           <div className='text-[16px] font-medium '>
             <div>
-              <br />· React Hooks, Recoil 상태관리를 활용한 효율적인 컴포넌트 설계 및 상태 관리
+              · React Hooks, Recoil 상태관리를 활용한 효율적인 컴포넌트 설계 및 상태 관리
               <br />
               <br />· JEST를 이용한 단위 테스트 작성 및 Storybook을 통한 컴포넌트 테스트 환경 구축
               <br />
               <br />· GitHub Pages, Netlify를 활용한 배포 및 CI/CD 파이프라인 학습
-              <br />
-              <br />· Agile Scrum 기법과 Kanban 보드를 사용한 프로젝트 관리, Git Flow 브랜치 전략 적용
             </div>
           </div>
         </div>
@@ -51,7 +49,7 @@ export default function Activities() {
                 프론트엔드 세션 자료
               </a>
               를 직접 기획, 제작 및 운영 <br />
-              <br />· 대학 연합 아이디어톤, 해커톤에 참여 및 진행, 팀원들과 협업하며 실전 프로젝트 경험을 쌓음
+              <br />· 대학 연합 아이디어톤, 해커톤 참가 및 운영, 팀원들과 협업하며 실전 프로젝트를 경험
             </div>
           </div>
         </div>
@@ -70,7 +68,7 @@ export default function Activities() {
           <div className='text-[16px] font-medium '>
             <div>
               · 경기도 일자리재단 주관, 경기청년 갭이어 프로젝트에 개인으로 참여 <br />
-              <br />· React, TypeScript, SpringBoot 등 주요 기술스택을 공부할 수있는 기회가 되었음
+              <br />· React, TypeScript, SpringBoot 등 주요 기술스택을 학습
             </div>
           </div>
         </div>

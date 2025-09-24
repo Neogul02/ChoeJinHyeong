@@ -79,7 +79,7 @@ export default function Projects() {
     },
   ]
   return (
-    <section className='flex justify-center'>
+    <section className='flex justify-center mb-20'>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-5 my-8 max-w-4xl'>
         {projects.map((project, idx) => (
           <div

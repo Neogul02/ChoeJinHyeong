@@ -14,8 +14,8 @@ export default function Education() {
         <div className='w-1/2 pl-5 pt-3 pr-15'>
           <div className='text-[16px] font-medium '>
             <div>
-              · 전공학점 3.91/4.5 <br />
-              · 4-8학기 연속 성적 우수 장학생 선발 <br />
+              · 학점 3.91 / 4.5 <br />
+              · 4-8학기 연속 성적 우수 장학생 <br />
             </div>
           </div>
         </div>
@@ -34,7 +34,7 @@ export default function Education() {
           <div className='text-[16px] font-medium '>
             <div>
               · 동두천고등학교 IT 동아리 ‘로봇빌’ 개발 팀장
-              <br />· 고교-대학 연계사업, 신한대 공학 수업 수강
+              <br />· 고교-대학 연계사업, 신한대 웹 개발 수업 수강
             </div>
           </div>
         </div>

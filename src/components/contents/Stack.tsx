@@ -1,7 +1,7 @@
 // 기술 스택
 export default function Stack() {
   return (
-    <section>
+    <section className='mb-20'>
       {/* 위 쪽 블럭: Frontend, Backend */}
       <div className='text-[16px] flex flex-row justify-center'>현재 공부하고 있는 기술 스택은 🍅 표시를 해두었어요, 항상 쉬지 않고 새로운 기술을 탐구하고 있습니다.</div>
       <div className='md:flex flex-col md:flex-row justify-between my-5 ml-10'>
