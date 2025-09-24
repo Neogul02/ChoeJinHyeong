@@ -1,7 +1,7 @@
 // 기술 스택
 export default function Stack() {
   return (
-    <section>
+    <section className='mb-20'>
       {/* 근로복지공단 용인지사*/}
       <div className='flex flex-row justify-between my-10 ml-10'>
         <div className='w-1/2 pr-6'>
