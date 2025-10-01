@@ -30,7 +30,7 @@ export default function Activities() {
           <div className='text-[22px] font-bold'>멋쟁이사자처럼 13기</div>
           <div className='text-[16px] font-bold ml-3'>
             <div>2024.11 ~ 활동 중</div>
-            <div className='font-light'>프론트엔드팀·운영진</div>
+            <div className='font-light'>부회장 · 프론트엔드운영진</div>
             <div className='font-light'>2025 강남대학교 우수 동아리상 수상</div>
           </div>
         </div>
@@ -48,7 +48,7 @@ export default function Activities() {
                 className='text-[#3182f6] hover:underline m-2'>
                 프론트엔드 세션 자료
               </a>
-              를 직접 기획, 제작 및 운영 <br />
+              를 기획, 제작 및 운영 <br />
               <br />· 대학 연합 아이디어톤, 해커톤 참가 및 운영, 팀원들과 협업하며 실전 프로젝트를 경험
             </div>
           </div>

@@ -13,6 +13,7 @@ import Career from '@/components/contents/Career'
 import Activities from '../components/contents/Activities'
 import Projects from '@/components/contents/Projects'
 import Education from '@/components/contents/Education'
+import Certification from '@/components/contents/Certification'
 import Contact from '@/components/contents/Contact'
 
 export default function Home() {
@@ -82,6 +83,11 @@ export default function Home() {
         <SectionLineDivided text='프로젝트' />
         <div id='projects'>
           <Projects />
+        </div>
+
+        <SectionLineDivided text='자격증' />
+        <div id='certification'>
+          <Certification />
         </div>
 
         <SectionLineDivided text='교육' />

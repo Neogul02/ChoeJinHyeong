@@ -10,6 +10,7 @@ const sections = [
   { id: 'career', label: '이력' },
   { id: 'activities', label: '대외활동' },
   { id: 'projects', label: '프로젝트' },
+  { id: 'certification', label: '자격증' },
   { id: 'education', label: '교육' },
 ]
 
