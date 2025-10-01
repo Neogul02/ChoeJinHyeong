@@ -1,7 +1,7 @@
 import React from 'react'
 import CustomRotatingIntro from '@/components/CustomRotatingIntro'
 
-export default function About() {
+export default function Contact() {
   return (
     <main className='min-h-screen relative animate-fadeIn'>
       <section className='flex flex-col-reverse md:flex-row items-center max-w-5xl mx-auto mt-25 px-4'>
