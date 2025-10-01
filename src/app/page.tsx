@@ -15,7 +15,6 @@ import Contact from '@/components/contents/Contact'
 export default function Home() {
   return (
     <main className='min-h-screen relative animate-fadeIn'>
-      
       <section className='flex flex-col-reverse md:flex-row items-center max-w-5xl mx-auto mt-25 px-4'>
         {/* 로테이트 텍스트 섹션 */}
 
@@ -48,19 +47,29 @@ export default function Home() {
 
       <section className='max-w-5xl mx-auto mt-12 mb-12 px-4'>
         <SectionLine text='기술 스택' />
-        <Stack />
+        <div id='stack'>
+          <Stack />
+        </div>
 
         <SectionLineDivided text='이력' />
-        <Career />
+        <div id='career'>
+          <Career />
+        </div>
 
         <SectionLineDivided text='대외활동' />
-        <Activities />
+        <div id='activities'>
+          <Activities />
+        </div>
 
         <SectionLineDivided text='프로젝트' />
-        <Projects />
+        <div id='projects'>
+          <Projects />
+        </div>
 
         <SectionLineDivided text='교육' />
-        <Education />
+        <div id='education'>
+          <Education />
+        </div>
 
         <Contact />
       </section>
