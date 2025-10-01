@@ -1,6 +1,8 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { usePathname } from 'next/navigation'
+import { motion } from 'framer-motion'
 import { useThemeStore } from '@/store/useThemeStore'
 
 const sections = [
@@ -14,12 +16,13 @@ const sections = [
 export default function SectionNavigation() {
   const [activeSection, setActiveSection] = useState<string>('')
   const { theme } = useThemeStore()
+  const pathname = usePathname()
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId)
     if (element) {
       const elementPosition = element.offsetTop
-      const offsetPosition = elementPosition - 10 // 80px 위쪽 여백
+      const offsetPosition = elementPosition - 80 // 80px 위쪽 여백
 
       window.scrollTo({
         top: offsetPosition,
@@ -51,42 +54,70 @@ export default function SectionNavigation() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  // Contact 페이지에서는 섹션 네비게이션을 표시하지 않음
+  if (pathname === '/contact') {
+    return null
+  }
+
   return (
     <div className='fixed right-8 top-1/3 transform -translate-y-1/2 z-40 hidden lg:flex flex-col gap-4'>
       {sections.map((section) => (
-        <div
+        <motion.div
           key={section.id}
-          className='relative group cursor-pointer p-1 flex items-center justify-center'
-          onClick={() => scrollToSection(section.id)}>
+          className='relative cursor-pointer p-1 flex items-center justify-center'
+          onClick={() => scrollToSection(section.id)}
+          initial='rest'
+          whileHover='hover'
+          variants={{
+            rest: {},
+            hover: {},
+          }}>
           {/* Dash */}
-          <div
+          <motion.div
             className={`
-              w-6 h-0.5 rounded-full transition-all duration-300 transform
-              group-hover:w-8 group-hover:h-1
-              ${activeSection === section.id ? (theme === 'dark' ? 'bg-white' : 'bg-gray-800') : theme === 'dark' ? 'bg-gray-400 group-hover:bg-white' : 'bg-gray-400 group-hover:bg-gray-800'}
+              rounded-full
+              ${activeSection === section.id ? (theme === 'dark' ? 'bg-white' : 'bg-gray-800') : theme === 'dark' ? 'bg-gray-400' : 'bg-gray-400'}
             `}
+            initial={{ width: 24, height: 2 }}
+            animate={{
+              width: activeSection === section.id ? 32 : 24,
+              height: activeSection === section.id ? 4 : 2,
+              backgroundColor: activeSection === section.id ? (theme === 'dark' ? '#ffffff' : '#1f2937') : theme === 'dark' ? '#9ca3af' : '#9ca3af',
+            }}
+            whileHover={{
+              width: 32,
+              height: 4,
+              backgroundColor: theme === 'dark' ? '#ffffff' : '#1f2937',
+              scale: 1.1,
+            }}
+            whileTap={{ scale: 0.95 }}
+            transition={{ duration: 0.3, ease: 'easeInOut' }}
           />
 
           {/* Label tooltip */}
-          <div
+          <motion.div
             className={`
               absolute right-10 top-1/2 transform -translate-y-1/2
               px-3 py-1 rounded-md text-sm font-medium
-              opacity-0 group-hover:opacity-100 transition-opacity duration-200
               pointer-events-none whitespace-nowrap
-              ${theme === 'dark' ? 'bg-gray-800 text-white border border-gray-600' : 'bg-white text-gray-800 border border-gray-300 shadow-md'}
-            `}>
+              ${theme === 'dark' ? 'bg-white text-black border border-gray-300 shadow-md' : 'bg-white text-gray-800 border border-gray-300 shadow-md'}
+            `}
+            variants={{
+              rest: { opacity: 0, x: 10 },
+              hover: { opacity: 1, x: 0 },
+            }}
+            transition={{ duration: 0.2, ease: 'easeOut' }}>
             {section.label}
             {/* Arrow */}
             <div
               className={`
                 absolute left-full top-1/2 transform -translate-y-1/2
                 w-0 h-0 border-l-4 border-y-4 border-y-transparent
-                ${theme === 'dark' ? 'border-l-gray-800' : 'border-l-white'}
+                ${theme === 'dark' ? 'border-l-white' : 'border-l-white'}
               `}
             />
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       ))}
     </div>
   )
