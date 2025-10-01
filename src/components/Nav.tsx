@@ -25,10 +25,10 @@ export default function Nav() {
       </div>
       <div className='flex space-x-3 md:space-x-5 items-center '>
         <Link
-          href='/about'
+          href='/contact'
           className={linkClassName}
         >
-          About
+          Contact
         </Link>
         <Link
           href='https://neogul02.tistory.com/'

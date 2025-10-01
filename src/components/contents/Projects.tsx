@@ -9,7 +9,6 @@ import Project_Portfolio from '@/components/modals/Project_Portfolio'
 import Project_Likelion from '@/components/modals/Project_Likelion'
 import Project_Hanamory from '@/components/modals/Project_Hanamory'
 import Project_Runaway from '@/components/modals/Project_Runaway'
-import Project_InternInMeta from '@/components/modals/Project_InternInMeta'
 import Project_Knock from '@/components/modals/Project_Knock'
 
 export default function Projects() {
@@ -19,14 +18,14 @@ export default function Projects() {
   // 네비게이션 함수들
   const handlePrevious = () => {
     if (openModal !== null) {
-      const prevIndex = openModal === 0 ? 5 : openModal - 1
+      const prevIndex = openModal === 0 ? 4 : openModal - 1
       setOpenModal(prevIndex)
     }
   }
 
   const handleNext = () => {
     if (openModal !== null) {
-      const nextIndex = openModal === 5 ? 0 : openModal + 1
+      const nextIndex = openModal === 4 ? 0 : openModal + 1
       setOpenModal(nextIndex)
     }
   }
@@ -47,32 +46,25 @@ export default function Projects() {
     },
     {
       id: 1,
-      title: 'internInMeta: React 쇼핑몰 웹사이트',
-      period: '2025.07 ~ 2025.08',
-      image: '/images/internInMeta/인턴in메타.png',
-      bgColor: theme === 'dark' ? '#1877f2' : '#4267b2',
-    },
-    {
-      id: 2,
       title: 'Portfolio',
       period: '2025.05 - 진행 중',
       image: '',
       bgColor: theme === 'dark' ? '#e6e6e6' : '#2c2d2e',
     },
     {
-      id: 3,
+      id: 2,
       title: 'LikelionKNU: 부원 리쿠르팅 서비스',
       period: '2025.01 - 2025.04',
       image: '/images/likelion/likelion_main.png',
     },
     {
-      id: 4,
+      id: 3,
       title: 'Hanamory: AI 꽃다발 인식 서비스',
       period: '2025.03 ~ 진행 중',
       image: '/images/hanamory/hanamory_main.jpg',
     },
     {
-      id: 5,
+      id: 4,
       title: '도망가자: 재난상황 대피소 제공 서비스 ',
       period: '2025.02 ~ 2025.04',
       image: '/images/runaway/runaway_main.png',
@@ -130,7 +122,7 @@ export default function Projects() {
         onPrevious={handlePrevious}
         onNext={handleNext}
         showNavigation={true}>
-        <Project_InternInMeta />
+        <Project_Portfolio />
       </Modal>
       <Modal
         open={openModal === 2}
@@ -139,7 +131,7 @@ export default function Projects() {
         onPrevious={handlePrevious}
         onNext={handleNext}
         showNavigation={true}>
-        <Project_Portfolio />
+        <Project_Likelion />
       </Modal>
       <Modal
         open={openModal === 3}
@@ -148,19 +140,10 @@ export default function Projects() {
         onPrevious={handlePrevious}
         onNext={handleNext}
         showNavigation={true}>
-        <Project_Likelion />
-      </Modal>
-      <Modal
-        open={openModal === 4}
-        onClose={() => setOpenModal(null)}
-        style={cardStyle}
-        onPrevious={handlePrevious}
-        onNext={handleNext}
-        showNavigation={true}>
         <Project_Hanamory />
       </Modal>
       <Modal
-        open={openModal === 5}
+        open={openModal === 4}
         onClose={() => setOpenModal(null)}
         style={cardStyle}
         onPrevious={handlePrevious}

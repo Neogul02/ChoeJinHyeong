@@ -10,7 +10,7 @@ import Career from '@/components/contents/Career'
 import Activities from '../components/contents/Activities'
 import Projects from '@/components/contents/Projects'
 import Education from '@/components/contents/Education'
-import AboutMore from '@/components/contents/AboutMore'
+import Contact from '@/components/contents/Contact'
 
 export default function Home() {
   return (
@@ -62,7 +62,7 @@ export default function Home() {
         <SectionLineDivided text='교육' />
         <Education />
 
-        <AboutMore />
+        <Contact />
       </section>
     </main>
   )
