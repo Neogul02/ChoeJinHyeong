@@ -57,11 +57,12 @@ export default function Home() {
           <br />
           기술은 도구일 뿐, 개발의 목표는 사람에게 닿는 경험이라 생각합니다.
         </p>
-        <p className='text-center mt-20 text-gray-400'>(PC, Chrome에서 보시는 것을 권장드립니다)</p>
+        <p className='text-center mt-20 text-gray-400'>(PC, Chrome에서 보시는 것을 권장드립니다.</p>
       </motion.section>
 
+      {/* 기술 스택 섹션 */}
       <motion.section
-        className='max-w-5xl mx-auto mt-12 mb-12 px-4'
+        className='max-w-5xl mx-auto py-16 px-4'
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.4 }}>
@@ -69,32 +70,74 @@ export default function Home() {
         <div id='stack'>
           <Stack />
         </div>
+      </motion.section>
 
+      {/* 이력 섹션 */}
+      <motion.section
+        className='max-w-5xl mx-auto py-16 px-4'
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.5 }}>
         <SectionLineDivided text='이력' />
         <div id='career'>
           <Career />
         </div>
+      </motion.section>
 
+      {/* 대외활동 섹션 */}
+      <motion.section
+        className='max-w-5xl mx-auto py-16 px-4'
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.6 }}>
         <SectionLineDivided text='대외활동' />
         <div id='activities'>
           <Activities />
         </div>
+      </motion.section>
 
+      {/* 프로젝트 섹션 */}
+      <motion.section
+        className='max-w-5xl mx-auto py-16 px-4'
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.7 }}>
         <SectionLineDivided text='프로젝트' />
         <div id='projects'>
           <Projects />
         </div>
+      </motion.section>
 
+      {/* 자격증 섹션 */}
+      <motion.section
+        className='max-w-5xl mx-auto py-16 px-4'
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.8 }}>
         <SectionLineDivided text='자격증' />
         <div id='certification'>
           <Certification />
         </div>
+      </motion.section>
 
+      {/* 교육 섹션 */}
+      <motion.section
+        className='max-w-5xl mx-auto py-16 px-4'
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.9 }}>
         <SectionLineDivided text='교육' />
         <div id='education'>
           <Education />
         </div>
+      </motion.section>
 
+      {/* 연락처 섹션 */}
+      <motion.section
+        className='max-w-5xl mx-auto py-16 px-4'
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 1.0 }}>
         <Contact />
       </motion.section>
     </motion.main>
