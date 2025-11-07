@@ -60,7 +60,7 @@ export default function Projects() {
     {
       id: 3,
       title: 'Hanamory: AI 꽃다발 인식 서비스',
-      period: '2025.03 ~ 진행 중',
+      period: '2025.03 ~ 2025.11',
       image: '/images/hanamory/hanamory_main.jpg',
     },
     {
