@@ -3,7 +3,7 @@ export default function Activities() {
   return (
     <section className='mb-20'>
       {/* Meta 인턴십 */}
-      <div className='flex flex-row justify-between my-10 ml-10'>
+      {/* <div className='flex flex-row justify-between my-10 ml-10'>
         <div className='w-1/2 pr-6'>
           <div className='text-[22px] font-bold'>Intern In Meta</div>
           <div className='text-[16px] font-bold ml-3'>
@@ -22,7 +22,7 @@ export default function Activities() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* 멋사 */}
       <div className='flex flex-row justify-between my-10 ml-10'>
