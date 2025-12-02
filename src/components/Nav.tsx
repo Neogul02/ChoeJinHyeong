@@ -12,14 +12,14 @@ export default function Nav() {
 
   if (!mounted) return null
 
-  const linkClassName = `text-lg cursor-pointer transition-colors duration-300 hover:text-mainblue`
+  const linkClassName = `text-lg cursor-pointer transition-colors duration-300 hover:text-[#3182f6]`
 
   return (
     <nav className='flex justify-between items-center p-4 select-none'>
       <div className='text-2xl font-bold cursor-pointer whitespace-nowrap'>
         <Link href='/'>
-          <span className='block md:hidden transition-colors duration-300 hover:text-mainblue'>CJH</span>
-          <span className='hidden md:block transition-colors duration-300 hover:text-mainblue'>ChoeJinHyeong</span>
+          <span className='block md:hidden transition-colors duration-300 hover:text-[#3182f6]'>CJH</span>
+          <span className='hidden md:block transition-colors duration-300 hover:text-[#3182f6]'>ChoeJinHyeong</span>
         </Link>
       </div>
       <div className='flex space-x-3 md:space-x-5 items-center '>

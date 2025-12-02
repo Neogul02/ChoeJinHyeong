@@ -6,7 +6,7 @@ export default function Activities() {
       <div className='flex flex-col items-center my-20 md:my-35'>
         <Link
           href='/about'
-          className='w-[50%] text-[22px] font-bold text-left transition-colors duration-300 hover:text-mainblue'>
+          className='w-[50%] text-[22px] font-bold text-left transition-colors duration-300 hover:text-[#3182f6]'>
           <div>{`About ->`}</div>
         </Link>
         <div
