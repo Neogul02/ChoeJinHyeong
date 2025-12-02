@@ -2,8 +2,7 @@
 import { useEffect, useState } from 'react'
 
 const skills_texts = ['Next.js', 'React', 'TypeScript', 'JavaScript']
-const names_texts = ['ChoeJinHyeong', 'チェ・ジンヒョン']
-// const names_texts = ['최진형', 'ChoeJinHyeong', '崔眞亨', 'チェ・ジンヒョン', '너굴먹', 'Neogul02']
+const names_texts = ['최진형', 'ChoeJinHyeong', '崔眞亨', 'チェ・ジンヒョン', 'Neogul02']
 
 export default function CustomRotatingIntro() {
   const [skillIndex, setSkillIndex] = useState(0)
@@ -22,7 +21,7 @@ export default function CustomRotatingIntro() {
       if (i <= currentSkill.length) {
         setSkillText(currentSkill.slice(0, i))
         i++
-        setTimeout(typeSkill, 75) // 타이핑 속도
+        setTimeout(typeSkill, 90) // 타이핑 속도
       } else {
         setTimeout(() => {
           setSkillIndex((prev) => (prev + 1) % skills_texts.length)
