@@ -12,21 +12,21 @@ export default function Project_Portfolio() {
           href='https://choe-jinhyeong.vercel.app/'
           target='_blank'
           rel='noopener noreferrer'
-          className='text-[#3182f6] hover:underline'>
+          className='text-mainblue hover:underline'>
           {`Link->`}
         </a>
         <a
           href='https://neogul02.tistory.com/39'
           target='_blank'
           rel='noopener noreferrer'
-          className='text-[#3182f6] hover:underline'>
+          className='text-mainblue hover:underline'>
           {`Blog->`}
         </a>
         <a
           href='https://github.com/Neogul02/ChoeJinHyeong'
           target='_blank'
           rel='noopener noreferrer'
-          className='text-[#3182f6] hover:underline'>
+          className='text-mainblue hover:underline'>
           {`GitHub->`}
         </a>
       </div>

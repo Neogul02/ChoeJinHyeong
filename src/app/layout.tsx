@@ -2,6 +2,7 @@ import './globals.css'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import SectionNavigation from '@/components/SectionNavigation'
+import ThemeInitializer from '@/components/ThemeInitializer'
 
 import DarkModeButton from '@/components/DarkModeButton'
 import ScrollToTopButton from '@/components/ScrollToTopButton'
@@ -15,6 +16,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang='kr'>
       <body className='antialiased bg-background text-foreground'>
+        <ThemeInitializer />
         {/* Section Navigation */}
         <SectionNavigation />
 

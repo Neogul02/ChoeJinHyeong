@@ -12,21 +12,21 @@ export default function Project_Likelion() {
           href='https://www.likelionknu.com/'
           target='_blank'
           rel='noopener noreferrer'
-          className='text-[#3182f6] hover:underline'>
+          className='text-mainblue hover:underline'>
           {`Link->`}
         </a>
         <a
           href='https://github.com/RunawayKNU/FE'
           target='_blank'
           rel='noopener noreferrer'
-          className='text-[#3182f6] hover:underline'>
+          className='text-mainblue hover:underline'>
           {`GitHub FE->`}
         </a>
         <a
           href='https://github.com/RunawayKNU/BE'
           target='_blank'
           rel='noopener noreferrer'
-          className='text-[#3182f6] hover:underline'>
+          className='text-mainblue hover:underline'>
           {`GitHub BE->`}
         </a>
       </div>
@@ -62,7 +62,7 @@ export default function Project_Likelion() {
           href='https://www.likelionknu.com/'
           target='_blank'
           rel='noopener noreferrer'
-          className='text-[#3182f6] hover:underline mx-1'>{`www.likelionknu.com`}</a>
+          className='text-mainblue hover:underline mx-1'>{`www.likelionknu.com`}</a>
         도메인을 vercel 배포 도메인과 연결했어요.
       </div>
       <SectionLine />
@@ -84,7 +84,7 @@ export default function Project_Likelion() {
           href='https://neogul02-portfolio.notion.site/22bcc92d46da8084a8b5d5039ca4742e?pvs=74'
           target='_blank'
           rel='noopener noreferrer'
-          className='text-[#3182f6] hover:underline mx-1'>{`Notion 문서`}</a>
+          className='text-mainblue hover:underline mx-1'>{`Notion 문서`}</a>
         로 관리하며 체계적으로 협업했어요.
       </div>
 

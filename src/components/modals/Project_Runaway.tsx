@@ -12,14 +12,14 @@ export default function Project_Runaway() {
           href='https://github.com/likelionknu/Likelion13-FE'
           target='_blank'
           rel='noopener noreferrer'
-          className='text-[#3182f6] hover:underline'>
+          className='text-mainblue hover:underline'>
           {`GitHub FE->`}
         </a>
         <a
           href='https://github.com/likelionknu/Likelion13-BE'
           target='_blank'
           rel='noopener noreferrer'
-          className='text-[#3182f6] hover:underline'>
+          className='text-mainblue hover:underline'>
           {`GitHub BE->`}
         </a>
       </div>
@@ -55,7 +55,7 @@ export default function Project_Runaway() {
           href='https://youtube.com/shorts/RTiNDdH2Pk0'
           target='_blank'
           rel='noopener noreferrer'
-          className='text-[#3182f6] hover:underline'>
+          className='text-mainblue hover:underline'>
           {`유튜브 영상으로 보기->`}
         </a>
       </div>
@@ -65,7 +65,7 @@ export default function Project_Runaway() {
           download
           target='_blank'
           rel='noopener noreferrer'
-          className='text-[#3182f6] hover:underline'>
+          className='text-mainblue hover:underline'>
           {`프로젝트 발표 자료(PDF)로 보기->`}
         </a>
       </div>

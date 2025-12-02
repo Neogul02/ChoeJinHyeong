@@ -11,21 +11,21 @@ export default function Project_Knock() {
           href='https://www.knock-knock.site/'
           target='_blank'
           rel='noopener noreferrer'
-          className='text-[#3182f6] hover:underline'>
+          className='text-mainblue hover:underline'>
           {`Link->`}
         </a>
         <a
           href='https://github.com/Hackathon-ROKANF/Knock-FE'
           target='_blank'
           rel='noopener noreferrer'
-          className='text-[#3182f6] hover:underline'>
+          className='text-mainblue hover:underline'>
           {`GitHub FE->`}
         </a>
         <a
           href='https://github.com/Hackathon-ROKANF/KnockAI'
           target='_blank'
           rel='noopener noreferrer'
-          className='text-[#3182f6] hover:underline'>
+          className='text-mainblue hover:underline'>
           {`GitHub AI->`}
         </a>
       </div>
@@ -63,7 +63,7 @@ export default function Project_Knock() {
           download
           target='_blank'
           rel='noopener noreferrer'
-          className='text-[#3182f6] hover:underline'>
+          className='text-mainblue hover:underline'>
           {`프로젝트 발표 자료(PDF)로 보기->`}
         </a>
       </div>

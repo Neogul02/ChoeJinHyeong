@@ -45,7 +45,7 @@ export default function Activities() {
                 href='https://bit.ly/4lKIXPW'
                 target='_blank'
                 rel='noopener noreferrer'
-                className='text-[#3182f6] hover:underline m-2'>
+                className='text-mainblue hover:underline m-2'>
                 프론트엔드 세션 자료
               </a>
               를 기획, 제작 및 운영 <br />

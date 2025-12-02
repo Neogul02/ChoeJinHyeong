@@ -12,14 +12,14 @@ export default function Project_Hanamory() {
           href='https://neogul02.tistory.com/34'
           target='_blank'
           rel='noopener noreferrer'
-          className='text-[#3182f6] hover:underline'>
+          className='text-mainblue hover:underline'>
           {`Blog->`}
         </a>
         <a
           href='https://github.com/Neogul02/Hanamory-FE'
           target='_blank'
           rel='noopener noreferrer'
-          className='text-[#3182f6] hover:underline'>
+          className='text-mainblue hover:underline'>
           {`GitHub FE->`}
         </a>
       </div>
@@ -121,13 +121,13 @@ export default function Project_Hanamory() {
           href='https://capstone-hanamory.notion.site/?pvs=74'
           target='_blank'
           rel='noopener noreferrer'
-          className='text-[#3182f6] hover:underline'>{`Notion 문서`}</a>
+          className='text-mainblue hover:underline'>{`Notion 문서`}</a>
         와
         <a
           href='https://neogul02.tistory.com/34'
           target='_blank'
           rel='noopener noreferrer'
-          className='text-[#3182f6] hover:underline'>{`블로그`}</a>
+          className='text-mainblue hover:underline'>{`블로그`}</a>
         에 정리하며 체계적으로 관리했어요.
       </div>
 

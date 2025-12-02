@@ -67,11 +67,11 @@ export default function Contact() {
 
         <div className='space-y-4 md:space-y-6 text-sm md:text-base leading-relaxed text-center'>
           <p>
-            안녕하세요, <span className='font-semibold'>경험을 설계하는 프론트엔드 개발자 최진형</span>입니다.
+            안녕하세요, <span className='font-semibold '>경험을 설계하는 프론트엔드 개발자 최진형</span>입니다.
           </p>
 
           <p>
-            저는 단순히 기능을 구현하는 것을 넘어, <span className='font-semibold'>사용자에게 어떻게 전달할지를 고민</span>합니다.
+            저는 단순히 기능을 구현하는 것을 넘어, <span className='font-semibold '>사용자에게 어떻게 전달할지를 고민</span>합니다.
             <br /> 기술은 도구일 뿐, 개발의 진정한 목표는 사람에게 닿는 경험이라고 생각하기 때문입니다.
           </p>
 
@@ -81,7 +81,7 @@ export default function Contact() {
           </p>
 
           <p>
-            <span className='font-semibold'>&quot;같이 일하면 재밌는 사람, 같이 일하고 싶은 사람&quot;</span>이라는 말을 많이 듣습니다. <br />저 또한 정적이지 않고 동적인 팀원이 되고자 노력합니다.
+            <span className='font-semibold '>&quot;같이 일하면 재밌는 사람, 같이 일하고 싶은 사람&quot;</span>이라는 말을 많이 듣습니다. <br />저 또한 정적이지 않고 동적인 팀원이 되고자 노력합니다.
           </p>
         </div>
       </motion.section>
