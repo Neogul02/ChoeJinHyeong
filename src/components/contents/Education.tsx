@@ -33,8 +33,9 @@ export default function Education() {
         <div className='w-full md:w-1/2 md:pl-5 md:pt-3 pr-4 md:pr-15'>
           <div className='text-sm md:text-[16px] font-medium'>
             <div>
-              · 동두천고등학교 IT 동아리 '로봇빌' 개발 팀장
-              <br />· 고교-대학 연계사업, 신한대 웹 개발 수업 수강
+              {`· 동두천고등학교 IT 동아리 '로봇빌' 개발 팀장`}
+              <br />
+              {`· 고교-대학 연계사업, 신한대 웹 개발 수업 수강`}
             </div>
           </div>
         </div>

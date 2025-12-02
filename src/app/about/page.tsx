@@ -1,6 +1,7 @@
 'use client'
 
 import React from 'react'
+import Image from 'next/image'
 import { motion } from 'framer-motion'
 import CustomRotatingIntro from '@/components/CustomRotatingIntro'
 
@@ -23,14 +24,13 @@ export default function Contact() {
 
         {/* 프로필 이미지 */}
         <div className='mb-4 md:mb-4 md:ml-8'>
-          <img
+          <Image
             src='/images/profile.png'
             alt='Profile_Image'
-            className='
-              w-[280px]
-              h-[280px]
-              object-cover
-            '
+            width={280}
+            height={280}
+            className='object-cover'
+            priority
           />
         </div>
       </section>
