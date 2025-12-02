@@ -36,7 +36,7 @@ export default function Nav() {
           Linkedin
         </Link>
         <Link
-          href='https://'
+          href='https://neogul02.tistory.com/'
           className={linkClassName}
           target='_blank'
           rel='noopener noreferrer'>
