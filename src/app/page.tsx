@@ -59,11 +59,11 @@ export default function Home() {
             기술은 도구일 뿐, 개발의 목표는 사람에게 닿는 경험이라 생각합니다.
           </p>
           <button
-            className='cursor-pointer  text-base font-semibold md:text-[20px] text-gray-400 hover:text-[#3182f6] transition-colors mt-10'
+            className='cursor-pointer  text-base font-semibold md:text-[20px] text-gray-400 hover:text-[#3182f6] transition-colors py-16'
             onClick={() => window.open('https://www.figma.com/design/WBaXINRDszR2CRStJTHpbI/choejinhyeong_resume?node-id=0-1&t=7DZc4iYEwVO0HI1X-1', '_blank')}>
             이력서 보기
           </button>
-          <p className='text-center mt-20 text-gray-400'>(PC, Chrome에서 보시는 것을 권장드립니다.)</p>
+          <p className='text-center text-gray-400'>(PC, Chrome에서 보시는 것을 권장드립니다.)</p>
         </motion.section>
       </div>
 
