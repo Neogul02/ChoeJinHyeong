@@ -1,18 +1,12 @@
-
-import React from 'react';
-
+import React from 'react'
 
 export default function Footer() {
-
   return (
-    <footer
-      className='justify-center place-content-center h-[150px]'
-
-    >
-      <div className='text-[16px] lineheight-6 text-center'>
-        Copyright 2025 | ChoeJinHyeong all right reserved
+    <footer className='justify-center place-content-center h-[150px]'>
+      <div className='text-sm md:text-[16px] text-center'>
+        © 2025 ChoeJinHyeong. All Rights Reserved.
         <br />
-        @Powered by Neogul02 | For muffie
+        <span className='text-gray-400'>Last Updated 2025.12.01 | For Murphy</span>
       </div>
     </footer>
   )

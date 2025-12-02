@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react'
 
 const skills_texts = ['Next.js', 'React', 'TypeScript', 'JavaScript']
-const names_texts = ['ChoeJinHyeong','チェ・ジンヒョン']
+const names_texts = ['ChoeJinHyeong', 'チェ・ジンヒョン']
 // const names_texts = ['최진형', 'ChoeJinHyeong', '崔眞亨', 'チェ・ジンヒョン', '너굴먹', 'Neogul02']
 
 export default function CustomRotatingIntro() {
@@ -71,15 +71,13 @@ export default function CustomRotatingIntro() {
         z-10
         whitespace-nowrap
         break-keep
-      '
-    >
+      '>
       안녕하세요!
       <br />
       <strong>
         <span
           className='underline cursor-blink'
-          style={{ color: '#3182f6' }}
-        >
+          style={{ color: '#3182f6' }}>
           {skillText}
         </span>
       </strong>
@@ -89,8 +87,7 @@ export default function CustomRotatingIntro() {
       <strong>
         <span
           className='underline cursor-blink'
-          style={{ color: '#3182f6' }}
-        >
+          style={{ color: '#3182f6' }}>
           {nameText}
         </span>
       </strong>

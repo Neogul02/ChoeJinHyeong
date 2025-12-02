@@ -6,6 +6,7 @@ import { motion } from 'framer-motion'
 import { useThemeStore } from '@/store/useThemeStore'
 
 const sections = [
+  { id: 'intro', label: '소개' },
   { id: 'stack', label: '기술 스택' },
   { id: 'career', label: '이력' },
   { id: 'activities', label: '대외활동' },
@@ -16,10 +17,15 @@ const sections = [
 
 export default function SectionNavigation() {
   const [activeSection, setActiveSection] = useState<string>('')
+  const [isUserClicking, setIsUserClicking] = useState(false)
   const { theme } = useThemeStore()
   const pathname = usePathname()
 
   const scrollToSection = (sectionId: string) => {
+    // 클릭 시 즉시 활성화 상태 변경
+    setActiveSection(sectionId)
+    setIsUserClicking(true)
+
     const element = document.getElementById(sectionId)
     if (element) {
       const elementPosition = element.offsetTop
@@ -29,11 +35,19 @@ export default function SectionNavigation() {
         top: offsetPosition,
         behavior: 'smooth',
       })
+
+      // 스크롤 완료 후 자동 감지 재개 (1초 후)
+      setTimeout(() => {
+        setIsUserClicking(false)
+      }, 1000)
     }
   }
 
   useEffect(() => {
     const handleScroll = () => {
+      // 사용자가 클릭 중이면 스크롤 감지 무시
+      if (isUserClicking) return
+
       const scrollPosition = window.scrollY + 100 // 100px offset for better detection
 
       // Check which section is currently in view
@@ -53,15 +67,15 @@ export default function SectionNavigation() {
     handleScroll() // Initial check
 
     return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+  }, [isUserClicking])
 
-  // Contact 페이지에서는 섹션 네비게이션을 표시하지 않음
-  if (pathname === '/contact') {
+  // Contact, About 페이지에서는 섹션 네비게이션을 표시하지 않음
+  if (pathname === '/contact' || pathname === '/about') {
     return null
   }
 
   return (
-    <div className='fixed right-8 top-1/3 transform -translate-y-1/2 z-40 hidden lg:flex flex-col gap-4'>
+    <div className='fixed right-8 top-1/3 transform -translate-y-1/2 z-40 hidden md:flex flex-col gap-4 select-none'>
       {sections.map((section) => (
         <motion.div
           key={section.id}

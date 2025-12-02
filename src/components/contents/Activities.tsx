@@ -1,7 +1,7 @@
 // 기술 스택
 export default function Activities() {
   return (
-    <section className='mb-20'>
+    <section className='mb-12 md:mb-20'>
       {/* Meta 인턴십 */}
       {/* <div className='flex flex-row justify-between my-10 ml-10'>
         <div className='w-1/2 pr-6'>
@@ -11,8 +11,8 @@ export default function Activities() {
             <div className='font-light'>응용SW개발 파트</div>
           </div>
         </div>
-        <div className='w-1/2 pl-5 pt-3 pr-15'>
-          <div className='text-[16px] font-medium '>
+        <div className='w-full md:w-1/2 md:pl-5 md:pt-3 pr-4 md:pr-15'>
+          <div className='text-sm md:text-[16px] font-medium'>
             <div>
               · React Hooks, Recoil 상태관리를 활용한 효율적인 컴포넌트 설계 및 상태 관리
               <br />
@@ -25,17 +25,17 @@ export default function Activities() {
       </div> */}
 
       {/* 멋사 */}
-      <div className='flex flex-row justify-between my-10 ml-10'>
-        <div className='w-1/2 pr-6'>
-          <div className='text-[22px] font-bold'>멋쟁이사자처럼 13기</div>
-          <div className='text-[16px] font-bold ml-3'>
+      <div className='flex flex-col md:flex-row justify-between my-8 md:my-10 ml-4 md:ml-10'>
+        <div className='w-full md:w-1/2 md:pr-6 mb-4 md:mb-0'>
+          <div className='text-lg md:text-[22px] font-bold'>멋쟁이사자처럼 13기</div>
+          <div className='text-sm md:text-[16px] font-bold ml-3'>
             <div>2024.11 ~ 활동 중</div>
             <div className='font-light'>부회장 · 프론트엔드운영진</div>
             <div className='font-light'>2025 강남대학교 우수 동아리상 수상</div>
           </div>
         </div>
-        <div className='w-1/2 pl-5 pt-3 pr-15'>
-          <div className='text-[16px] font-medium '>
+        <div className='w-full md:w-1/2 md:pl-5 md:pt-3 pr-4 md:pr-15'>
+          <div className='text-sm md:text-[16px] font-medium'>
             <div>
               · 강남대학교 멋쟁이사자처럼 13기 프론트엔드 파트 운영진으로 활동
               <br />
@@ -56,16 +56,16 @@ export default function Activities() {
       </div>
 
       {/* 경기청년 갭이어 */}
-      <div className='flex flex-row justify-between my-10 ml-10'>
-        <div className='w-1/2 pr-6'>
-          <div className='text-[22px] font-bold'>경기청년 갭이어</div>
-          <div className='text-[16px] font-bold ml-3'>
+      <div className='flex flex-col md:flex-row justify-between my-8 md:my-10 ml-4 md:ml-10'>
+        <div className='w-full md:w-1/2 md:pr-6 mb-4 md:mb-0'>
+          <div className='text-lg md:text-[22px] font-bold'>경기청년 갭이어</div>
+          <div className='text-sm md:text-[16px] font-bold ml-3'>
             <div>2024.05 ~ 2024.11</div>
             <div className='font-light'>경기도일자리재단 - 개인</div>
           </div>
         </div>
-        <div className='w-1/2 pl-5 pt-3 pr-15'>
-          <div className='text-[16px] font-medium '>
+        <div className='w-full md:w-1/2 md:pl-5 md:pt-3 pr-4 md:pr-15'>
+          <div className='text-sm md:text-[16px] font-medium'>
             <div>
               · 경기도 일자리재단 주관, 경기청년 갭이어 프로젝트에 개인으로 참여 <br />
               <br />· React, TypeScript, SpringBoot 등 주요 기술스택을 학습

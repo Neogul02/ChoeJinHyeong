@@ -71,15 +71,15 @@ export default function Projects() {
     },
   ]
   return (
-    <section className='flex justify-center mb-20'>
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-5 my-8 max-w-4xl'>
+    <section className='flex justify-center mb-12 md:mb-20 px-4'>
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5 my-6 md:my-8 max-w-4xl w-full'>
         {projects.map((project, idx) => (
           <div
             key={idx}
             style={cardStyle}
-            className='w-100 h-80 rounded-2xl p-3 shadow flex flex-col cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-lg '
+            className='w-full h-64 md:h-80 rounded-2xl p-2 md:p-3 shadow flex flex-col cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-lg'
             onClick={() => setOpenModal(idx)}>
-            <div className={`w-full h-[70%] rounded-2xl mb-3 flex items-center justify-center text-lg overflow-hidden`}>
+            <div className={`w-full h-[70%] rounded-2xl mb-2 md:mb-3 flex items-center justify-center text-sm md:text-lg overflow-hidden`}>
               {project.image ? (
                 <Image
                   src={project.image}
@@ -92,14 +92,14 @@ export default function Projects() {
               ) : (
                 <div
                   style={{ backgroundColor: project.bgColor }}
-                  className='w-full h-full justify-center items-center flex text-center text-[18px]'>
+                  className='w-full h-full justify-center items-center flex text-center text-sm md:text-[18px] px-2'>
                   <span style={{ color: theme === 'dark' ? '#2c2d2e' : '#e6e6e6' }}>{project.title}</span>
                 </div>
               )}
             </div>
-            <div className='text-[20px] font-semibold p-2'>
+            <div className='text-base md:text-[20px] font-semibold p-1 md:p-2'>
               {project.title}
-              <div className='text-[16px] pl-2'>{project.period}</div>
+              <div className='text-sm md:text-[16px] pl-1 md:pl-2'>{project.period}</div>
             </div>
           </div>
         ))}

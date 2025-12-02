@@ -20,18 +20,16 @@ export default function Modal({ open, onClose, children, style, onPrevious, onNe
       />
       {/* 모달 본체 */}
       <div
-        className='relative w-full max-w-[70%] h-full max-h-[90vh] rounded-xl shadow-lg z-10 mx-4 flex flex-col items-center justify-center'
-        style={style}
-      >
+        className='relative w-[90%] md:max-w-[70%] h-[95%] md:max-h-[90vh] rounded-xl md:rounded-xl shadow-lg z-10 mx-2 md:mx-4 flex flex-col items-center justify-center'
+        style={style}>
         {/* 스크롤 가능한 영역 */}
-        <div className='overflow-auto no-scrollbar max-w-[120vh] max-h-[80vh] py-10 px-30'>{children}</div>
+        <div className='overflow-auto no-scrollbar w-full md:max-w-[120vh] h-full md:max-h-[80vh] py-6 md:py-10 px-4 md:px-30'>{children}</div>
 
         {/* 닫기 버튼 */}
         <button
-          className='absolute top-4 right-8 hover:text-white text-4xl cursor-pointer'
+          className='absolute top-3 md:top-4 right-4 md:right-8 hover:text-white text-3xl md:text-4xl cursor-pointer z-20'
           onClick={onClose}
-          aria-label='닫기'
-        >{`×`}</button>
+          aria-label='닫기'>{`×`}</button>
 
         {/* 네비게이션 버튼 */}
         {showNavigation && (
@@ -39,20 +37,18 @@ export default function Modal({ open, onClose, children, style, onPrevious, onNe
             {/* 이전 버튼 */}
             {onPrevious && (
               <button
-                className='absolute left-4 top-1/2 transform -translate-y-1/2 hover:text-white text-3xl cursor-pointer p-2 rounded-full transition-colors'
+                className='absolute left-1 md:left-4 top-1/2 transform -translate-y-1/2 hover:text-white text-2xl md:text-3xl cursor-pointer p-1 md:p-2 rounded-full transition-colors z-20'
                 onClick={onPrevious}
-                aria-label='이전 프로젝트'
-              >
+                aria-label='이전 프로젝트'>
                 {`‹`}
               </button>
             )}
             {/* 다음 버튼 */}
             {onNext && (
               <button
-                className='absolute right-4 top-1/2 transform -translate-y-1/2 hover:text-white text-3xl cursor-pointer p-2 rounded-full  transition-colors'
+                className='absolute right-1 md:right-4 top-1/2 transform -translate-y-1/2 hover:text-white text-2xl md:text-3xl cursor-pointer p-1 md:p-2 rounded-full transition-colors z-20'
                 onClick={onNext}
-                aria-label='다음 프로젝트'
-              >
+                aria-label='다음 프로젝트'>
                 {`›`}
               </button>
             )}
@@ -60,8 +56,7 @@ export default function Modal({ open, onClose, children, style, onPrevious, onNe
         )}
         <style
           jsx
-          global
-        >{`
+          global>{`
           .no-scrollbar::-webkit-scrollbar {
             display: none;
           }
