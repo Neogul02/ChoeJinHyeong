@@ -3,7 +3,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import CustomRotatingIntro from '@/components/CustomRotatingIntro'
+import CustomRotatingIntro from '@/components/ui/CustomRotatingIntro'
 
 export default function Contact() {
   return (

@@ -1,8 +1,8 @@
-import SectionLine from '../SectionLine'
+import SectionLine from '@/components/ui/tools/SectionLine'
 
 export default function Project_Knock() {
   return (
-    <div className='animate-fadeIn'>
+    <div>
       <div className='text-xl md:text-[24px] font-bold mb-2'>Knock: 부동산 등기부등본 AI 분석 서비스</div>
       <div className='text-base md:text-[18px] mb-2'>2025.07 ~ 진행 중</div>
       <div className='text-sm md:text-[16px] mb-2'>Frontend 1, Backend 2, AI 1</div>

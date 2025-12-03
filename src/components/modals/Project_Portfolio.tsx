@@ -1,9 +1,9 @@
 import Image from 'next/image'
-import SectionLine from '../SectionLine'
+import SectionLine from '@/components/ui/tools/SectionLine'
 
 export default function Project_Portfolio() {
   return (
-    <div className='animate-fadeIn'>
+    <div>
       <div className='text-xl md:text-[24px] font-bold mb-2'>Portfolio</div>
       <div className='text-base md:text-[18px] mb-2'>2025.05 ~ 2025.07 / 디벨롭 중 </div>
       <div className='text-sm md:text-[16px] mb-2'>개인 프로젝트</div>

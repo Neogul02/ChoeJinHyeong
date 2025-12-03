@@ -5,6 +5,8 @@ interface ThemeState {
   setTheme: (theme: 'dark' | 'light') => void
   toggleTheme: () => void
   initializeTheme: () => void
+  isModalOpen: boolean
+  setIsModalOpen: (isOpen: boolean) => void
 }
 
 // 시스템 다크모드 감지
@@ -25,4 +27,6 @@ export const useThemeStore = create<ThemeState>((set) => ({
     const theme = savedTheme || getSystemTheme()
     set({ theme })
   },
+  isModalOpen: false,
+  setIsModalOpen: (isOpen) => set({ isModalOpen: isOpen }),
 }))

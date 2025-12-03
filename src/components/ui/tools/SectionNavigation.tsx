@@ -18,7 +18,7 @@ const sections = [
 export default function SectionNavigation() {
   const [activeSection, setActiveSection] = useState<string>('')
   const [isUserClicking, setIsUserClicking] = useState(false)
-  const { theme } = useThemeStore()
+  const { theme, isModalOpen } = useThemeStore()
   const pathname = usePathname()
 
   const scrollToSection = (sectionId: string) => {
@@ -74,6 +74,11 @@ export default function SectionNavigation() {
     return null
   }
 
+  // 모달이 열려있으면 섹션 네비게이션을 표시하지 않음
+  if (isModalOpen) {
+    return null
+  }
+
   return (
     <div className='fixed right-8 top-1/3 transform -translate-y-1/2 z-40 hidden md:flex flex-col gap-4 select-none'>
       {sections.map((section) => (
@@ -109,7 +114,6 @@ export default function SectionNavigation() {
             transition={{ duration: 0.3, ease: 'easeInOut' }}
           />
 
-          {/* Label tooltip */}
           <motion.div
             className={`
               absolute right-10 top-1/2 transform -translate-y-1/2
@@ -123,7 +127,6 @@ export default function SectionNavigation() {
             }}
             transition={{ duration: 0.2, ease: 'easeOut' }}>
             {section.label}
-            {/* Arrow */}
             <div
               className={`
                 absolute left-full top-1/2 transform -translate-y-1/2

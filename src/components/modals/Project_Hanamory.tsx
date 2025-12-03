@@ -1,9 +1,9 @@
 import Image from 'next/image'
-import SectionLine from '../SectionLine'
+import SectionLine from '@/components/ui/tools/SectionLine'
 
 export default function Project_Hanamory() {
   return (
-    <div className='animate-fadeIn'>
+    <div>
       <div className='text-xl md:text-[24px] font-bold mb-2'>Hanamory: AI 꽃다발 인식 서비스</div>
       <div className='text-base md:text-[18px] mb-2'>2025.03 ~ 개발 중</div>
       <div className='text-sm md:text-[16px] mb-2'>개인 프로젝트</div>

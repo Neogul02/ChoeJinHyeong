@@ -1,4 +1,4 @@
-import SectionLine from '../SectionLine'
+import SectionLine from '@/components/ui/tools/SectionLine'
 
 export default function Project_InternInMeta() {
   return (

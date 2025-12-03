@@ -1,12 +1,12 @@
 import './globals.css'
 import Script from 'next/script'
-import Nav from '@/components/Nav'
-import Footer from '@/components/Footer'
-import SectionNavigation from '@/components/SectionNavigation'
-import ThemeInitializer from '@/components/ThemeInitializer'
+import Nav from '@/components/layout/Nav'
+import Footer from '@/components/layout/Footer'
+import SectionNavigation from '@/components/ui/tools/SectionNavigation'
+import ThemeInitializer from '@/components/layout/ThemeInitializer'
 
-import DarkModeButton from '@/components/DarkModeButton'
-import ScrollToTopButton from '@/components/ScrollToTopButton'
+import DarkModeButton from '@/components/ui/buttons/DarkModeButton'
+import ScrollToTopButton from '@/components/ui/buttons/ScrollToTopButton'
 
 export const metadata = {
   title: 'Choe JinHyeong',
@@ -17,11 +17,11 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang='kr'>
       <body className='antialiased bg-background text-foreground'>
-        <Script 
-          src="https://cdn.counter.dev/script.js" 
-          data-id="a9a6b5ea-808a-49cf-91b0-91681288e73a" 
-          data-utcoffset="9"
-          strategy="afterInteractive"
+        <Script
+          src='https://cdn.counter.dev/script.js'
+          data-id='a9a6b5ea-808a-49cf-91b0-91681288e73a'
+          data-utcoffset='9'
+          strategy='afterInteractive'
         />
         <ThemeInitializer />
         {/* Section Navigation */}

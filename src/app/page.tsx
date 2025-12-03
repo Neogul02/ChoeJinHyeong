@@ -4,18 +4,18 @@ import React from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 
-import CustomRotatingIntro from '@/components/CustomRotatingIntro'
+import CustomRotatingIntro from '@/components/ui/CustomRotatingIntro'
 
-import SectionLine from '@/components/SectionLine'
-import SectionLineDivided from '@/components/SectionLineDivided'
+import SectionLine from '@/components/ui/tools/SectionLine'
+import SectionLineDivided from '@/components/ui/tools/SectionLineDivided'
 
-import Stack from '@/components/contents/Stack'
-import Career from '@/components/contents/Career'
-import Activities from '../components/contents/Activities'
-import Projects from '@/components/contents/Projects'
-import Education from '@/components/contents/Education'
-import Certification from '@/components/contents/Certification'
-import About from '@/components/contents/About'
+import Stack from '@/components/sections/Stack'
+import Career from '@/components/sections/Career'
+import Activities from '@/components/sections/Activities'
+import Projects from '@/components/sections/Projects'
+import Education from '@/components/sections/Education'
+import Certification from '@/components/sections/Certification'
+import About from '@/components/sections/About'
 
 export default function Home() {
   return (
