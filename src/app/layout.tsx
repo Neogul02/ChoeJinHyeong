@@ -1,4 +1,5 @@
 import './globals.css'
+import Script from 'next/script'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import SectionNavigation from '@/components/SectionNavigation'
@@ -16,6 +17,12 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang='kr'>
       <body className='antialiased bg-background text-foreground'>
+        <Script
+          src='https://cdn.counter.dev/script.js'
+          data-id='a9a6b5ea-808a-49cf-91b0-91681288e73a'
+          data-utcoffset='9'
+          strategy='afterInteractive'
+        />
         <ThemeInitializer />
         {/* Section Navigation */}
         <SectionNavigation />
