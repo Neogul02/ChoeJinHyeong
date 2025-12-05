@@ -14,8 +14,8 @@ export default function Education() {
         <div className='w-full md:w-1/2 md:pl-5 md:pt-3 pr-4 md:pr-15'>
           <div className='text-sm md:text-[16px] font-medium'>
             <div>
-              · 학점 3.91 / 4.5 <br />
-              · 4-8학기 연속 성적 우수 장학생 <br />
+              · GPA 4.06 / 4.5 <br />
+              · 4-8학기 연속 성적 우수,학년 수석 <br />
             </div>
           </div>
         </div>

@@ -5,7 +5,7 @@ export default function Project_Likelion() {
   return (
     <div>
       <div className='text-xl md:text-[24px] font-bold mb-2'>LikeLionKNU: 멋쟁이사자처럼 부원 리쿠르팅 사이트</div>
-      <div className='text-base md:text-[18px] mb-2'>2025.01 ~ 2025.04 </div>
+      <div className='text-base md:text-[18px] mb-2'>2024.12 ~ 2025.03 </div>
       <div className='text-sm md:text-[16px] mb-2'>Frontend 3, Backend 4, Design 1</div>
       <div className='text-sm md:text-[16px] font-bold flex flex-wrap gap-1'>
         <a
@@ -33,17 +33,21 @@ export default function Project_Likelion() {
       <br />
       <br />
       <section className='flex flex-col justify-center items-center'></section>
-      <div className='text-lg md:text-[20px] font-bold my-2'>이 프로젝트는 무엇인가요?</div>
+      <div className='text-lg md:text-[20px] font-bold my-2'>👋 이 프로젝트는 무엇인가요?</div>
       <div className='text-sm md:text-[16px] mb-2'>
         <div className='my-1 md:m-2'>· 강남대학교 멋쟁이사자처럼 13기 동아리 부원 모집 홈페이지에요.</div>
         <div className='my-1 md:m-2'>· 부원 모집기간 중 300명 이상의 사용자가 접속했고 110명 이상의 유저가 회원가입했어요.</div>
         <div className='my-1 md:m-2'>· 총 68명이 LikeLionKNU 서비스를 통해 지원서를 작성했어요.</div>
       </div>
-      <SectionLine />
-      <div className='text-lg md:text-[20px] font-bold my-2'>프로젝트 기능 </div>
+      <div className='my-6 md:my-8'>
+        <SectionLine />
+      </div>
+      <div className='text-lg md:text-[20px] font-bold my-2'>🎉 프로젝트 기능 </div>
       <div className='text-sm md:text-[16px] mb-2 ml-1 md:ml-2'>· 동아리 소개, 지원서 작성/조회, 서류합격 결과 조회, 면접 공지, 동아리 공지사항 서비스를 제공해요.</div>
-      <SectionLine />
-      <div className='text-lg md:text-[20px] font-bold my-2'>다음 기술 스택을 사용했어요</div>
+      <div className='my-6 md:my-8'>
+        <SectionLine />
+      </div>
+      <div className='text-lg md:text-[20px] font-bold my-2'>💻 다음 기술 스택을 사용했어요</div>
       <div className='text-sm md:text-[16px] font-bold ml-1 md:ml-2'>React + TypeScript</div>
       <div className='text-sm md:text-base ml-1 md:ml-2'>
         · 프론트엔드 개발을 처음하는 팀원이 있었기에 Next.js를 사용하지않고 React를 사용했어요, 페이지 라우팅, 폼 입력 등 전체적인 UI 로직을 컴포넌트 기반 구조로 설계했고, TypeScript 도입을 통해 타입 안정성과 개발자 경험을 향상시켰어요.
@@ -65,8 +69,10 @@ export default function Project_Likelion() {
           className='text-mainblue hover:underline mx-1'>{`www.likelionknu.com`}</a>
         도메인을 vercel 배포 도메인과 연결했어요.
       </div>
-      <SectionLine />
-      <div className='text-lg md:text-[20px] font-bold mb-2'>프로젝트 프리뷰</div>
+      <div className='my-6 md:my-8'>
+        <SectionLine />
+      </div>
+      <div className='text-lg md:text-[20px] font-bold mb-2'>🌊 프로젝트 프리뷰</div>
       <Image
         src='/images/likelion/likelion_Preview.gif'
         alt='likelion_Preview'
@@ -75,8 +81,10 @@ export default function Project_Likelion() {
         className='w-full h-auto rounded-4xl mb-4 shadow-lg '
         loading='lazy'
       />
-      <SectionLine />
-      <div className='text-lg md:text-[20px] font-bold my-2'>어떻게 개발했을까요?</div>
+      <div className='my-6 md:my-8'>
+        <SectionLine />
+      </div>
+      <div className='text-lg md:text-[20px] font-bold my-2'>🚀 어떻게 개발했을까요?</div>
       <div className='text-sm md:text-[16px] font-bold mt-3 md:mt-5 ml-1 md:ml-2'>개발 프로세스</div>
       <div className='text-sm md:text-base ml-1 md:ml-2'>
         매주 화요일, 모든 팀원이 전체 회의를 통해 파트별 진행 상황을 공유하고, 실시간 피드백을 통해 기획을 지속적으로 보완했어요. 프론트엔드 파트는 주요 기능을 컴포넌트 단위로 세분화하여 개발을 진행했고, 전체 개발 상황을

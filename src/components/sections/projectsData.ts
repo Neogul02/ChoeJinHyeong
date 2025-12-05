@@ -25,7 +25,7 @@ export const projectsData = (theme: 'dark' | 'light'): Project[] => [
   {
     id: 1,
     title: 'Knock: 간편하게 전세사기를 예방하는 방법 ',
-    period: '2025.07 ~ 진행 중',
+    period: '2025.07 ~ 2025.11',
     image: '/images/knock/knock_main.png',
     bgColor: theme === 'dark' ? '#4a9eff' : '#2563eb',
     component: Project_Knock,
@@ -33,30 +33,32 @@ export const projectsData = (theme: 'dark' | 'light'): Project[] => [
   {
     id: 2,
     title: 'Portfolio',
-    period: '2025.05 - 진행 중',
+    period: '2025.05 - now',
     image: '',
     bgColor: theme === 'dark' ? '#e6e6e6' : '#2c2d2e',
     component: Project_Portfolio,
   },
+
   {
     id: 3,
-    title: 'LikeLionKNU: 아기사자 리크루팅 서비스',
-    period: '2025.01 - 2025.04',
-    image: '/images/likelion/likelion_main.png',
-    component: Project_Likelion,
-  },
-  {
-    id: 4,
     title: 'Hanamory: Yolov5 꽃다발 인식 서비스',
-    period: '2025.03 ~ 2025.11',
+    period: '2025.03 ~ 2025.12',
     image: '/images/hanamory/hanamory_main.jpg',
     component: Project_Hanamory,
   },
+
   {
-    id: 5,
+    id: 4,
     title: '도망가자: 재난상황 대피소 제공 서비스 ',
     period: '2025.02 ~ 2025.04',
     image: '/images/runaway/runaway_main.png',
     component: Project_Runaway,
+  },
+  {
+    id: 5,
+    title: 'LikeionKNU: 아기사자 리크루팅 서비스',
+    period: '2024.12 - 2025.03',
+    image: '/images/likelion/likelion_main.png',
+    component: Project_Likelion,
   },
 ]

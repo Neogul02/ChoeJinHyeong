@@ -9,22 +9,15 @@ export default function Project_InternInMeta() {
       <br />
       <br />
       <section className='flex flex-col justify-center items-center'></section>
-      <div className='text-lg md:text-[20px] font-bold my-2'>이 프로젝트는 무엇인가요?</div>
+      <div className='text-lg md:text-[20px] font-bold my-2'>👋 이 프로젝트는 무엇인가요?</div>
       <div className='text-sm md:text-[16px] mb-2'>
         <div className='my-1 md:m-2 ml-1 md:ml-2'>· internInMeta 인턴십 기간 동안 개발한 React 기반 쇼핑몰 웹사이트에요.</div>
         <div className='my-1 md:m-2 ml-1 md:ml-2'>· 장바구니, 로그인, 상품상세 페이지 등 쇼핑몰의 핵심 기능을 모두 구현하여 실제 사용 가능한 수준의 웹 애플리케이션을 완성했어요.</div>
       </div>
-      <SectionLine />
-      <div className='text-lg md:text-[20px] font-bold mb-2'>프로젝트 프리뷰</div>
-      <div className='flex justify-center'>
-        <img
-          src='/images/internInMeta/internInMeta.png'
-          alt='Meta 인턴십 쇼핑몰 프로젝트'
-          className='max-w-[70%] md:max-w-[30%] h-auto rounded-4xl mb-4'
-        />
+      <div className='my-6 md:my-8'>
+        <SectionLine />
       </div>
-      <SectionLine />
-      <div className='text-lg md:text-[20px] font-bold my-2'>프로젝트 기능</div>
+      <div className='text-lg md:text-[20px] font-bold my-2'>🎉 프로젝트 기능</div>
       <div className='text-sm md:text-[16px] mb-2'>
         <div className='my-1 md:m-2 ml-1 md:ml-2'>
           · <strong>상품 목록 및 상세 페이지</strong>: 상품 정보를 깔끔하게 표시하고, 상세 정보를 확인할 수 있는 페이지를 구현했어요
@@ -39,8 +32,21 @@ export default function Project_InternInMeta() {
           · <strong>반응형 디자인</strong>: 모든 디바이스에서 최적의 사용자 경험을 제공하는 반응형 웹 디자인을 적용했어요
         </div>
       </div>
-      <SectionLine />
-      <div className='text-lg md:text-[20px] font-bold my-2'>다음 기술 스택을 사용했어요</div>
+      <div className='my-6 md:my-8'>
+        <SectionLine />
+      </div>
+      <div className='text-lg md:text-[20px] font-bold mb-2'>🌊 프로젝트 프리뷰</div>
+      <div className='flex justify-center'>
+        <img
+          src='/images/internInMeta/internInMeta.png'
+          alt='Meta 인턴십 쇼핑몰 프로젝트'
+          className='max-w-[70%] md:max-w-[30%] h-auto rounded-4xl mb-4'
+        />
+      </div>
+      <div className='my-6 md:my-8'>
+        <SectionLine />
+      </div>
+      <div className='text-lg md:text-[20px] font-bold my-2'>💻 다음 기술 스택을 사용했어요</div>
       <div className='text-sm md:text-[16px] font-bold ml-1 md:ml-2'>React & React Hooks</div>
       <div className='text-sm md:text-base ml-1 md:ml-2'>· 함수형 컴포넌트와 Hooks를 활용하여 효율적이고 재사용 가능한 컴포넌트를 설계했어요.</div>
       <div className='text-sm md:text-[16px] font-bold mt-3 md:mt-5 ml-1 md:ml-2'>Recoil</div>
@@ -50,8 +56,10 @@ export default function Project_InternInMeta() {
       <div className='text-sm md:text-[16px] font-bold mt-3 md:mt-5 ml-1 md:ml-2'>배포 & CI/CD</div>
       <div className='text-sm md:text-base ml-1 md:ml-2'>· GitHub Pages와 Netlify를 활용한 배포 경험과 CI/CD 파이프라인 학습을 진행했어요.</div>
 
-      <SectionLine />
-      <div className='text-lg md:text-[20px] font-bold my-2'>어떻게 개발했을까요?</div>
+      <div className='my-6 md:my-8'>
+        <SectionLine />
+      </div>
+      <div className='text-lg md:text-[20px] font-bold my-2'>🚀 어떻게 개발했을까요?</div>
       <div className='text-sm md:text-[16px] font-bold mt-3 md:mt-5 my-1 md:m-2 ml-1 md:ml-2'>개발 프로세스</div>
       <div className='text-sm md:text-base ml-1 md:ml-2'>Agile Scrum 기법을 적용하여 반복적인 개발 프로세스를 통해 지속적으로 기능을 개선하고 발전시켰어요.</div>
 

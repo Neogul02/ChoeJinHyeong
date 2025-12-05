@@ -4,7 +4,7 @@ import SectionLine from '@/components/ui/tools/SectionLine'
 export default function Project_DeunDeun() {
   return (
     <div>
-      <div className='text-xl md:text-[24px] font-bold mb-2'>DeunDeun: 결식아동 지원 가맹점 통합 서비스</div>
+      <div className='text-xl md:text-[24px] font-bold mb-2'>DeunDeun: 모든 아이들이 든든한 한 끼를</div>
       <div className='text-base md:text-[18px] mb-2'>2024.10 ~ 2024.12</div>
       <div className='text-sm md:text-[16px] mb-2'>Frontend 2, Backend 2, Design 1</div>
       <div className='text-sm md:text-[16px] font-bold flex flex-wrap gap-1'>

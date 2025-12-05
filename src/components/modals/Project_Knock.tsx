@@ -1,10 +1,11 @@
+import Image from 'next/image'
 import SectionLine from '@/components/ui/tools/SectionLine'
 
 export default function Project_Knock() {
   return (
     <div>
-      <div className='text-xl md:text-[24px] font-bold mb-2'>Knock: 부동산 등기부등본 AI 분석 서비스</div>
-      <div className='text-base md:text-[18px] mb-2'>2025.07 ~ 진행 중</div>
+      <div className='text-xl md:text-[24px] font-bold mb-2'>Knock: 간편하게 전세사기를 예방하는 방법</div>
+      <div className='text-base md:text-[18px] mb-2'>2025.07 ~ 2025.11</div>
       <div className='text-sm md:text-[16px] mb-2'>Frontend 1, Backend 2, AI 1</div>
       <div className='text-sm md:text-[16px] font-bold flex flex-wrap gap-1'>
         <a
@@ -32,14 +33,16 @@ export default function Project_Knock() {
       <br />
       <br />
       <section className='flex flex-col justify-center items-center'></section>
-      <div className='text-lg md:text-[20px] font-bold my-2'>이 프로젝트는 무엇인가요?</div>
+      <div className='text-lg md:text-[20px] font-bold my-2'>👋 이 프로젝트는 무엇인가요?</div>
       <div className='text-sm md:text-[16px] mb-2'>
-        <div className='my-1 md:m-2'>· 2025 멋쟁이사자처럼 해커톤에 제출한 부동산 등기부등본 AI 분석 서비스에요.</div>
+        <div className='my-1 md:m-2'>· 2025 멋쟁이사자처럼 중앙 해커톤, 어흥콘, 학술제에 제출한 부동산 등기부등본 AI 분석 서비스에요.</div>
         <div className='my-1 md:m-2'>· 복잡한 등기부등본을 AI가 분석하여 부동산 거래의 위험도를 쉽게 파악할 수 있는 웹 애플리케이션이에요.</div>
         <div className='my-1 md:m-2'>{`· 팀 '물땅참'으로 참여하여 일반인도 쉽게 이해할 수 있도록 위험도를 시각화해주는 서비스를 개발했어요.`}</div>
       </div>
-      <SectionLine />
-      <div className='text-lg md:text-[20px] font-bold my-2'>프로젝트 기능</div>
+      <div className='my-6 md:my-8'>
+        <SectionLine />
+      </div>
+      <div className='text-lg md:text-[20px] font-bold my-2'>🎉 프로젝트 기능</div>
       <div className='text-sm md:text-[16px] mb-2'>
         <div className='my-1 md:m-2'>
           · <strong>등기부등본 업로드 및 분석</strong>: PDF 드래그 앤 드롭으로 업로드하면 AI가 약 30초만에 자동 분석해요.
@@ -54,8 +57,10 @@ export default function Project_Knock() {
           · <strong>사용자 가이드</strong>: 등기부등본 발급 방법과 어려운 부동산 용어를 쉽게 설명해요.
         </div>
       </div>
-      <SectionLine />
-      <div className='text-lg md:text-[20px] font-bold mb-2'>프로젝트 프리뷰</div>
+      <div className='my-6 md:my-8'>
+        <SectionLine />
+      </div>
+      <div className='text-lg md:text-[20px] font-bold mb-2'>🌊 프로젝트 프리뷰</div>
 
       <div className='text-sm md:text-[16px] font-bold my-2'>
         <a
@@ -86,8 +91,10 @@ export default function Project_Knock() {
           />
         </div>
       </div>
-      <SectionLine />
-      <div className='text-lg md:text-[20px] font-bold my-2'>다음 기술 스택을 사용했어요</div>
+      <div className='my-6 md:my-8'>
+        <SectionLine />
+      </div>
+      <div className='text-lg md:text-[20px] font-bold my-2'>💻 다음 기술 스택을 사용했어요</div>
       <div className='text-sm md:text-[16px] font-bold ml-1 md:ml-2'>React + TypeScript</div>
       <div className='text-sm md:text-base ml-1 md:ml-2'>· 반응형 웹 애플리케이션 구현을 위해 React를 사용했고, TypeScript로 타입 안전성을 보장하여 안정적인 파일 업로드와 분석 결과 표시 기능을 구현했어요.</div>
       <div className='text-sm md:text-[16px] font-bold mt-3 md:mt-5 ml-1 md:ml-2'>TanStack Query</div>
@@ -96,11 +103,16 @@ export default function Project_Knock() {
       <div className='text-sm md:text-base ml-1 md:ml-2'>· 백엔드 API 서버 구축을 위해 Python Flask를 사용하여 PDF 업로드, 파일 검증, AI 분석 요청 처리를 안정적으로 구현했어요.</div>
       <div className='text-sm md:text-[16px] font-bold mt-3 md:mt-5 ml-1 md:ml-2'>AI 모델 (등기부등본 분석)</div>
       <div className='text-sm md:text-base ml-1 md:ml-2'>· 등기부등본 PDF 파싱과 텍스트 분석을 위한 AI 모델을 활용하여 표제부, 갑구, 을구 정보를 자동으로 분석하고 위험도를 산출해요.</div>
+      <div className='text-sm md:text-base ml-1 md:ml-2'>
+        · <strong>OneClassSVM 모델</strong>을 커스텀 학습시켜 정상 등기부등본과 위험한 등기부등본을 구분하는 이상 탐지 알고리즘을 구현했어요.
+      </div>
       <div className='text-sm md:text-[16px] font-bold mt-3 md:mt-5 ml-1 md:ml-2'>Tailwind</div>
       <div className='text-sm md:text-base ml-1 md:ml-2'>· 드래그 앤 드롭, 원형 차트, 모달 등 직관적인 UI/UX 구현을 위해 Tailwind CSS를 활용하여 반응형 디자인을 구현했어요.</div>
 
-      <SectionLine />
-      <div className='text-lg md:text-[20px] font-bold my-2'>어떻게 개발했을까요?</div>
+      <div className='my-6 md:my-8'>
+        <SectionLine />
+      </div>
+      <div className='text-lg md:text-[20px] font-bold my-2'>🚀 어떻게 개발했을까요?</div>
 
       <div className='text-sm md:text-[16px] font-bold mt-3 md:mt-5 my-1 md:m-2'>AI 모델 최적화</div>
       <div className='text-sm md:text-base my-1 md:m-2'>· 등기부등본 PDF 파싱과 텍스트 분석을 위한 AI 모델을 최적화하여 정확한 위험도 분석을 구현했어요.</div>
@@ -118,6 +130,41 @@ export default function Project_Knock() {
       <div className='text-sm md:text-[16px] font-bold mt-3 md:mt-5 ml-1 md:ml-2'>사용자 경험 개선</div>
       <div className='text-sm md:text-base my-1 md:m-2'>· 드래그 앤 드롭 업로드, 실시간 분석 진행률, 애니메이션 차트 등 사용자 친화적인 인터페이스를 구현했어요.</div>
       <div className='text-sm md:text-base my-1 md:m-2'>· 반응형 디자인을 통해 데스크탑과 모바일 모든 환경에서 일관된 사용자 경험을 제공했어요.</div>
+
+      <div className='my-6 md:my-8'>
+        <SectionLine />
+      </div>
+      <div className='text-lg md:text-[20px] font-bold my-2'>🏆 수상 내역</div>
+      <div className='text-sm md:text-base my-1 md:m-2 ml-1 md:ml-2'>
+        · 멋쟁이사자처럼 대학 연합 해커톤 <strong>어서모여 흥이나게! 어흥콘</strong>에서 <strong>혁신부문 우수상</strong>을 수상했어요.
+      </div>
+      <Image
+        src='/images/knock/knock_award_1.png'
+        alt='knock_award_1'
+        width={1920}
+        height={1080}
+        className='w-full h-auto rounded-4xl mb-4'
+        loading='lazy'
+      />
+      <Image
+        src='/images/knock/knock_award_2.png'
+        alt='knock_award_2'
+        width={1920}
+        height={1080}
+        className='w-full h-auto rounded-4xl mb-4'
+        loading='lazy'
+      />
+      <div className='text-sm md:text-base my-1 md:m-2 ml-1 md:ml-2'>
+        · 강남대학교 컴퓨터공학부 학술제에서 16팀 중 <strong>2등, 우수상</strong>을 수상했어요.
+      </div>
+      <Image
+        src='/images/knock/knock_award_3.jpeg'
+        alt='knock_award_3'
+        width={1920}
+        height={1080}
+        className='w-full h-auto rounded-4xl mb-4'
+        loading='lazy'
+      />
     </div>
   )
 }

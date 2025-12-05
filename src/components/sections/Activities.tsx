@@ -46,9 +46,9 @@ export default function Activities() {
                 target='_blank'
                 rel='noopener noreferrer'
                 className='text-mainblue hover:underline m-2'>
-                프론트엔드 세션 자료
+                프론트엔드 세션 
               </a>
-              를 기획, 제작 및 운영 <br />
+              을 기획, 진행 <br />
               <br />· 대학 연합 아이디어톤, 해커톤 참가 및 운영, 팀원들과 협업하며 실전 프로젝트를 경험
             </div>
           </div>
