@@ -8,15 +8,11 @@ import { projectsData } from './projectsData'
 
 export default function Projects() {
   const [openModal, setOpenModal] = useState<number | null>(null)
-  const [direction, setDirection] = useState<'left' | 'right'>('right')
-  const [isFirstOpen, setIsFirstOpen] = useState(true)
   const { theme, setIsModalOpen } = useThemeStore()
 
   // 네비게이션 함수들
   const handlePrevious = () => {
     if (openModal !== null) {
-      setIsFirstOpen(false)
-      setDirection('left')
       const prevIndex = openModal === 0 ? 5 : openModal - 1
       setOpenModal(prevIndex)
     }
@@ -24,8 +20,6 @@ export default function Projects() {
 
   const handleNext = () => {
     if (openModal !== null) {
-      setIsFirstOpen(false)
-      setDirection('right')
       const nextIndex = openModal === 5 ? 0 : openModal + 1
       setOpenModal(nextIndex)
     }
@@ -48,7 +42,6 @@ export default function Projects() {
             style={cardStyle}
             className='w-full h-64 md:h-80 rounded-2xl p-2 md:p-3 shadow flex flex-col cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-lg'
             onClick={() => {
-              setIsFirstOpen(true)
               setOpenModal(idx)
               setIsModalOpen(true)
             }}>
@@ -87,15 +80,12 @@ export default function Projects() {
             open={openModal === project.id}
             onClose={() => {
               setOpenModal(null)
-              setIsFirstOpen(true)
               setIsModalOpen(false)
             }}
             style={cardStyle}
             onPrevious={handlePrevious}
             onNext={handleNext}
-            showNavigation={true}
-            direction={direction}
-            isFirstOpen={isFirstOpen}>
+            showNavigation={true}>
             <ProjectComponent />
           </Modal>
         )

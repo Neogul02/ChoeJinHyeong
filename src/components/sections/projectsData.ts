@@ -17,15 +17,14 @@ export interface Project {
 export const projectsData = (theme: 'dark' | 'light'): Project[] => [
   {
     id: 0,
-    title: 'DeunDeun 프로젝트',
-    period: '2025. ~ 개발 중',
-    image: '',
-    bgColor: theme === 'dark' ? '#9333ea' : '#a855f7',
+    title: 'DeunDeun: 모든 아이들이 든든한 한 끼를',
+    period: '2024.10 ~ 2024.12',
+    image: '/images/deundeun/deundeun_main.png',
     component: Project_DeunDeun,
   },
   {
     id: 1,
-    title: 'Knock: AI 등기부등본 분석 서비스 ',
+    title: 'Knock: 간편하게 전세사기를 예방하는 방법 ',
     period: '2025.07 ~ 진행 중',
     image: '/images/knock/knock_main.png',
     bgColor: theme === 'dark' ? '#4a9eff' : '#2563eb',
@@ -41,14 +40,14 @@ export const projectsData = (theme: 'dark' | 'light'): Project[] => [
   },
   {
     id: 3,
-    title: 'LikelionKNU: 부원 리쿠르팅 서비스',
+    title: 'LikeLionKNU: 아기사자 리크루팅 서비스',
     period: '2025.01 - 2025.04',
     image: '/images/likelion/likelion_main.png',
     component: Project_Likelion,
   },
   {
     id: 4,
-    title: 'Hanamory: AI 꽃다발 인식 서비스',
+    title: 'Hanamory: Yolov5 꽃다발 인식 서비스',
     period: '2025.03 ~ 2025.11',
     image: '/images/hanamory/hanamory_main.jpg',
     component: Project_Hanamory,

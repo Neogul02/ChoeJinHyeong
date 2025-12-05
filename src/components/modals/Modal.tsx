@@ -8,33 +8,11 @@ interface ModalProps {
   onPrevious?: () => void
   onNext?: () => void
   showNavigation?: boolean
-  direction?: 'left' | 'right'
-  isFirstOpen?: boolean
 }
 
-export default function Modal({ open, onClose, children, style, onPrevious, onNext, showNavigation = false, direction = 'right', isFirstOpen = false }: ModalProps) {
-  const variants = {
-    enter: (custom: { direction: string; isFirstOpen: boolean }) => ({
-      y: custom.isFirstOpen ? 100 : 0,
-      x: custom.isFirstOpen ? 0 : custom.direction === 'right' ? 700 : -700,
-      opacity: 0,
-    }),
-    center: {
-      y: 0,
-      x: 0,
-      opacity: 1,
-    },
-    exit: {
-      y: 100,
-      x: 0,
-      opacity: 0,
-    },
-  }
-
+export default function Modal({ open, onClose, children, style, onPrevious, onNext, showNavigation = false }: ModalProps) {
   return (
-    <AnimatePresence
-      mode='wait'
-      custom={{ direction, isFirstOpen }}>
+    <AnimatePresence mode='wait'>
       {open && (
         <div className='fixed inset-0 z-10 flex items-center justify-center overflow-auto'>
           {/* 배경 */}
@@ -48,13 +26,10 @@ export default function Modal({ open, onClose, children, style, onPrevious, onNe
           />
           {/* 모달 본체 */}
           <motion.div
-            key={open ? 'modal-open' : 'modal-close'}
-            custom={{ direction, isFirstOpen }}
-            variants={variants}
-            initial='enter'
-            animate='center'
-            exit='exit'
-            transition={{ duration: 0.3, ease: 'easeInOut' }}
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 50 }}
+            transition={{ duration: 0.3 }}
             className='relative w-[90%] md:max-w-[70%] h-[95%] md:max-h-[90vh] rounded-xl md:rounded-xl shadow-lg z-10 mx-2 md:mx-4 flex flex-col items-center justify-center'
             style={style}>
             {/* 스크롤 가능한 영역 */}

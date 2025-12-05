@@ -59,7 +59,7 @@ export default function Project_Knock() {
 
       <div className='text-sm md:text-[16px] font-bold my-2'>
         <a
-          href='/images/knock/강남대학교_물땅참_Knock.pdf' // public 폴더 기준 경로
+          href='https://drive.google.com/file/d/1Eqj1aU7WsBm9EHjOxzWbNAGQ2n1YutQu/view?usp=drive_link' // public 폴더 기준 경로
           download
           target='_blank'
           rel='noopener noreferrer'
