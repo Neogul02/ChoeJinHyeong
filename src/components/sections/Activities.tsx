@@ -38,18 +38,17 @@ export default function Activities() {
           <div className='text-sm md:text-[16px] font-medium'>
             <div>
               · 강남대학교 멋쟁이사자처럼 13기 프론트엔드 파트 운영진으로 활동
-              <br />
-              <br />· 매주 목요일 아기사자들에게 개발 지식을 공유하는
-              <br />
+              <br/>
+              <br />· 매주 목요일 아기사자들에게 개발 지식을 공유하는{' '}
               <a
                 href='https://bit.ly/4lKIXPW'
                 target='_blank'
                 rel='noopener noreferrer'
-                className='text-mainblue hover:underline m-2'>
-                프론트엔드 세션 
+                className='text-mainblue hover:underline'>
+                프론트엔드 세션
               </a>
               을 기획, 진행 <br />
-              <br />· 대학 연합 아이디어톤, 해커톤 참가 및 운영, 팀원들과 협업하며 실전 프로젝트를 경험
+              <br />· 대학 연합 아이디어톤, 중앙 해커톤, 어흥콘, 간지톤 등 팀원들과 협업하며 실전 프로젝트를 경험
             </div>
           </div>
         </div>
@@ -68,7 +67,7 @@ export default function Activities() {
           <div className='text-sm md:text-[16px] font-medium'>
             <div>
               · 경기도 일자리재단 주관, 경기청년 갭이어 프로젝트에 개인으로 참여 <br />
-              <br />· React, TypeScript, SpringBoot 등 주요 기술스택을 학습
+              
             </div>
           </div>
         </div>

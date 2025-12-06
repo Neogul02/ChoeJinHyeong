@@ -82,8 +82,8 @@ export default function Project_Hanamory() {
         </a>
       </div>
       <Image
-        src='/images/hanamory/hanamory_Preview.gif'
-        alt='likelion_Preview'
+        src='/images/hanamory/hanamory_preview.gif'
+        alt='hanamory_preview'
         width={1920}
         height={1080}
         className='w-full h-auto rounded-4xl mb-4'

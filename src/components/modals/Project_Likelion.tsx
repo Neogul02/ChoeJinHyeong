@@ -75,7 +75,7 @@ export default function Project_Likelion() {
       <div className='text-lg md:text-[20px] font-bold mb-2'>🌊 프로젝트 프리뷰</div>
       <Image
         src='/images/likelion/likelion_Preview.gif'
-        alt='likelion_Preview'
+        alt='likelion_preview'
         width={600}
         height={400}
         className='w-full h-auto rounded-4xl mb-4 shadow-lg '
