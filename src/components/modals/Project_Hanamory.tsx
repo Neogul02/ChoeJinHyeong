@@ -210,7 +210,7 @@ export default function Project_Hanamory() {
       </div>
       <div className='text-lg md:text-[20px] font-bold my-2'>🏆 수상 내역</div>
       <div className='text-sm md:text-base my-1 md:m-2 ml-1 md:ml-2'>
-        · 강남대학교 캡스톤디자인 졸업작품 <strong>개인부문 최우수상</strong>을 수상했어요.
+        · 강남대학교 캡스톤디자인 졸업작품전시회 <strong>개인부문 우수상</strong>을 수상했어요.
       </div>
     </div>
   )
