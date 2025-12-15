@@ -81,14 +81,13 @@ export default function Project_Hanamory() {
           {`프로젝트 발표 자료(PDF)로 보기->`}
         </a>
       </div>
-      <Image
-        src='/images/hanamory/hanamory_preview.gif'
-        alt='hanamory_preview'
-        width={600}
-        height={400}
+      <video
+        src='/images/hanamory/hanamory_preview.mp4'
         className='w-full h-auto rounded-4xl mb-4 shadow-lg'
-        unoptimized
-        priority
+        autoPlay
+        loop
+        muted
+        playsInline
       />
 
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4'>
