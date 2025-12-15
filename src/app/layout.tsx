@@ -10,7 +10,31 @@ import ScrollToTopButton from '@/components/ui/buttons/ScrollToTopButton'
 
 export const metadata = {
   title: 'Choe JinHyeong',
-  description: "Choe JinHyeong's personal portfolio",
+  description: '경험을 설계하는 프론트엔드 개발자 최진형입니다.',
+  keywords: ['최진형', 'ChoeJinHyeong', '프론트엔드', '개발자', 'Frontend Developer', 'Portfolio'],
+  authors: [{ name: 'Choe JinHyeong' }],
+  openGraph: {
+    type: 'website',
+    locale: 'ko_KR',
+    url: 'https://choe-jinhyeong.vercel.app/',
+    title: 'Choe JinHyeong | Frontend Developer',
+    description: '경험을 설계하는 프론트엔드 개발자 최진형입니다.',
+    siteName: 'Choe JinHyeong Portfolio',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Choe JinHyeong Profile',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Choe JinHyeong | Frontend Developer',
+    description: '경험을 설계하는 프론트엔드 개발자 최진형입니다.',
+    images: ['/og-image.jpg'],
+  },
 }
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
