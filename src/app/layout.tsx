@@ -9,6 +9,7 @@ import DarkModeButton from '@/components/ui/buttons/DarkModeButton'
 import ScrollToTopButton from '@/components/ui/buttons/ScrollToTopButton'
 
 export const metadata = {
+  metadataBase: new URL('https://choe-jinhyeong.vercel.app'),
   title: 'Choe JinHyeong',
   description: '경험을 설계하는 프론트엔드 개발자 최진형입니다.',
   keywords: ['최진형', 'ChoeJinHyeong', '프론트엔드', '개발자', 'Frontend Developer', 'Portfolio'],
@@ -22,7 +23,7 @@ export const metadata = {
     siteName: 'Choe JinHyeong Portfolio',
     images: [
       {
-        url: '/og-image.jpg',
+        url: 'https://choe-jinhyeong.vercel.app/images/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Choe JinHyeong Profile',
@@ -33,7 +34,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Choe JinHyeong | Frontend Developer',
     description: '경험을 설계하는 프론트엔드 개발자 최진형입니다.',
-    images: ['/og-image.jpg'],
+    images: ['https://choe-jinhyeong.vercel.app/images/og-image.jpg'],
   },
 }
 
