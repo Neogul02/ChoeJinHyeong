@@ -24,14 +24,45 @@ export default function Activities() {
         </div>
       </div> */}
 
+      {/* 해커톤 + */}
+      {/* <div className='flex flex-col md:flex-row justify-between my-8 md:my-10 ml-4 md:ml-10'>
+        <div className='w-full md:w-1/2 md:pr-6 mb-4 md:mb-0'>
+          <div className='text-lg md:text-[22px] font-bold'>2025 멋쟁이사자처럼 13기: 중앙 해커톤</div>
+          <div className='text-sm md:text-[16px] font-bold ml-3'>
+            <div>2024.11 ~ 2026.02</div>
+            <div className='font-light'>부회장 · 프론트엔드운영진</div>
+            <div className='font-light'>2025 강남대학교 우수 동아리 선정</div>
+          </div>
+        </div>
+        <div className='w-full md:w-1/2 md:pl-5 md:pt-3 pr-4 md:pr-15'>
+          <div className='text-sm md:text-[16px] font-medium'>
+            <div>
+              · 강남대학교 멋쟁이사자처럼 13기 프론트엔드 파트 운영진으로 활동
+              <br/>
+              <br />· 매주 목요일 아기사자들에게 개발 지식을 공유하는{' '}
+              <a
+                href='https://bit.ly/4lKIXPW'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='text-mainblue hover:underline'>
+                프론트엔드 세션
+              </a>
+              을 기획, 진행 <br />
+              <br />· 대학 연합 아이디어톤, 중앙 해커톤, 어흥콘, 간지톤 등 팀원들과 협업하며 실전 프로젝트를 경험
+            </div>
+          </div>
+        </div>
+      </div> */}
+      
+
       {/* 멋사 */}
       <div className='flex flex-col md:flex-row justify-between my-8 md:my-10 ml-4 md:ml-10'>
         <div className='w-full md:w-1/2 md:pr-6 mb-4 md:mb-0'>
           <div className='text-lg md:text-[22px] font-bold'>멋쟁이사자처럼 13기</div>
           <div className='text-sm md:text-[16px] font-bold ml-3'>
-            <div>2024.11 ~ 활동 중</div>
+            <div>2024.11 ~ 2026.02</div>
             <div className='font-light'>부회장 · 프론트엔드운영진</div>
-            <div className='font-light'>2025 강남대학교 우수 동아리상 수상</div>
+            <div className='font-light'>2025 강남대학교 우수 동아리 선정</div>
           </div>
         </div>
         <div className='w-full md:w-1/2 md:pl-5 md:pt-3 pr-4 md:pr-15'>

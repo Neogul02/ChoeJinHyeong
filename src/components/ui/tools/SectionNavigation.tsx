@@ -6,13 +6,13 @@ import { motion } from 'framer-motion'
 import { useThemeStore } from '@/store/useThemeStore'
 
 const sections = [
-  { id: 'intro', label: '소개' },
-  { id: 'stack', label: '기술 스택' },
-  { id: 'career', label: '이력' },
-  { id: 'activities', label: '대외활동' },
-  { id: 'projects', label: '프로젝트' },
-  { id: 'certification', label: '자격증' },
-  { id: 'education', label: '교육' },
+  { id: 'intro', label: 'Intro' },
+  { id: 'stack', label: 'Stack' },
+  // { id: 'career', label: '이력' },
+  { id: 'activities', label: 'Activities' },
+  { id: 'projects', label: 'Project' },
+  { id: 'certification', label: 'Certification' },
+  { id: 'education', label: 'Education' },
 ]
 
 export default function SectionNavigation() {

@@ -65,7 +65,7 @@ export default function Projects() {
             </div>
             <div className='text-base md:text-[20px] font-semibold p-1 md:p-2'>
               {project.title}
-              <div className='text-sm md:text-[16px] pl-1 md:pl-2'>{project.period}</div>
+              <div className='text-sm md:text-[16px]'>{project.period}</div>
             </div>
           </div>
         ))}

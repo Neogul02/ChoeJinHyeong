@@ -8,38 +8,40 @@ export default function Stack() {
         <div className='w-1/2 pr-2 md:pr-6'>
           <div className='text-base md:text-[22px] font-bold'>Frontend</div>
           <div className='text-sm md:text-[16px] ml-2 md:ml-3 space-y-1'>
-            <div> · React </div>
-            <div> · TypeScript</div>
-            <div> · Zustand</div>
-            <div> · Next 🍅</div>
-            <div> · Tailwind 🍅</div>
+            <div> · TypeScript / React </div>
+            <div> · Next.js 🍅</div>
+            <div> · React Query</div>
+            <div> · Zustand / Tailwind </div>
           </div>
         </div>
         <div className='w-1/2 pl-2 md:pl-10'>
           <div className='text-base md:text-[22px] font-bold'>Backend</div>
           <div className='text-sm md:text-[16px] ml-2 md:ml-3 space-y-1'>
-            <div> · SpringBoot </div>
-            <div> · Express</div>
+            <div> · Java / Spring Boot 🍅</div>
+            <div> · Python</div>
+            <div> · MySQL / PostgreSQL</div>
           </div>
         </div>
       </div>
+
       {/* 아래 쪽 블럭: Deployment, Cooperration */}
       <div className='flex flex-row justify-between my-6 md:my-10 ml-4 md:ml-10 mr-4 md:mr-0'>
         <div className='w-1/2 pr-2 md:pr-6'>
-          <div className='text-base md:text-[22px] font-bold'>Deployment</div>
+          <div className='text-base md:text-[22px] font-bold'>Infra</div>
           <div className='text-sm md:text-[16px] ml-2 md:ml-3 space-y-1'>
-            <div>· GitHub Actions</div>
-            <div>· Vercel</div>
-            <div>· AWS EC2</div>
-            <div>· Docker 🍅</div>
+            <div>· AWS (EC2, S3)</div>
+            <div>· GitHub Actions (CI/CD)</div>
+            <div>· Vite / Webpack (Build)</div>
+            <div>· Docker / k8s 🍅</div>
           </div>
         </div>
         <div className='w-1/2 pl-2 md:pl-10'>
           <div className='text-base md:text-[22px] font-bold'>Cooperation</div>
           <div className='text-sm md:text-[16px] ml-2 md:ml-3'>
-            <div>· Git</div>
-            <div>· Notion</div>
+            <div>· Git / GitHub</div>
             <div>· Figma</div>
+            <div>· Mattermost / Slack</div>
+            <div>· Notion</div>
           </div>
         </div>
       </div>

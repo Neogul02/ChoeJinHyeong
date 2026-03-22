@@ -6,7 +6,7 @@ export default function Footer() {
       <div className='text-sm md:text-[16px] text-center'>
         © 2025 ChoeJinHyeong. All Rights Reserved.
         <br />
-        <span className='text-gray-400'>Last Updated 2025.12.01 | For Murphy</span>
+        <span className='text-gray-400'>Last Updated 2026.03.22 | For Murphy</span>
       </div>
     </footer>
   )

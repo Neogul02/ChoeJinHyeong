@@ -54,7 +54,7 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}>
           <p className='text-center text-base font-semibold md:text-[20px] leading-relaxed'>
-            기능을 넘어, 사용자에게 어떻게 전달할지를 고민하는 개발자 최진형입니다.
+            사용자에게 어떻게 전달할지를 고민하는 개발자 최진형입니다.
             <br />
             기술은 도구일 뿐, 개발의 목표는 사람에게 닿는 경험이라 생각합니다.
           </p>
@@ -73,14 +73,14 @@ export default function Home() {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.4 }}>
-        <SectionLine text='기술 스택' />
+        <SectionLine text='Stack' />
         <div id='stack'>
           <Stack />
         </div>
       </motion.section>
 
       {/* 이력 섹션 */}
-      <motion.section
+      {/* <motion.section
         className='max-w-5xl mx-auto py-16 px-4'
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -89,7 +89,7 @@ export default function Home() {
         <div id='career'>
           <Career />
         </div>
-      </motion.section>
+      </motion.section> */}
 
       {/* 대외활동 섹션 */}
       <motion.section
@@ -97,7 +97,7 @@ export default function Home() {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.6 }}>
-        <SectionLineDivided text='대외활동' />
+        <SectionLineDivided text='Activities' />
         <div id='activities'>
           <Activities />
         </div>
@@ -109,7 +109,7 @@ export default function Home() {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.7 }}>
-        <SectionLineDivided text='프로젝트' />
+        <SectionLineDivided text='Project' />
         <div id='projects'>
           <Projects />
         </div>
@@ -121,7 +121,7 @@ export default function Home() {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.8 }}>
-        <SectionLineDivided text='자격증' />
+        <SectionLineDivided text='Certification' />
         <div id='certification'>
           <Certification />
         </div>
@@ -133,7 +133,7 @@ export default function Home() {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.9 }}>
-        <SectionLineDivided text='교육' />
+        <SectionLineDivided text='Education' />
         <div id='education'>
           <Education />
         </div>

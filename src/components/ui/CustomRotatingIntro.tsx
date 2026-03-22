@@ -1,7 +1,7 @@
 'use client'
 import { useEffect, useState } from 'react'
 
-const skills_texts = ['Next.js', 'React', 'TypeScript', 'JavaScript']
+const skills_texts = ['Next.js', 'React', 'TypeScript','JavaScript', 'Java', 'SpringBoot']
 const names_texts = ['최진형', 'ChoeJinHyeong', '崔眞亨', 'チェ・ジンヒョン', 'Neogul02']
 
 export default function CustomRotatingIntro() {
