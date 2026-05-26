@@ -44,7 +44,6 @@ export default function Modal({ open, onClose, children, style, onPrevious, onNe
             {/* 네비게이션 버튼 */}
             {showNavigation && (
               <>
-                {/* 이전 버튼 */}
                 {onPrevious && (
                   <button
                     className='absolute left-1 md:left-4 top-1/2 transform -translate-y-1/2 hover:text-white text-2xl md:text-3xl cursor-pointer p-1 md:p-2 rounded-full transition-colors z-20'
@@ -53,7 +52,6 @@ export default function Modal({ open, onClose, children, style, onPrevious, onNe
                     {`‹`}
                   </button>
                 )}
-                {/* 다음 버튼 */}
                 {onNext && (
                   <button
                     className='absolute right-1 md:right-4 top-1/2 transform -translate-y-1/2 hover:text-white text-2xl md:text-3xl cursor-pointer p-1 md:p-2 rounded-full transition-colors z-20'
@@ -64,17 +62,6 @@ export default function Modal({ open, onClose, children, style, onPrevious, onNe
                 )}
               </>
             )}
-            <style
-              jsx
-              global>{`
-              .no-scrollbar::-webkit-scrollbar {
-                display: none;
-              }
-              .no-scrollbar {
-                -ms-overflow-style: none;
-                scrollbar-width: none;
-              }
-            `}</style>
           </motion.div>
         </div>
       )}

@@ -10,28 +10,24 @@ export default function Projects() {
   const [openModal, setOpenModal] = useState<number | null>(null)
   const { theme, setIsModalOpen } = useThemeStore()
 
-  // 네비게이션 함수들
-  const handlePrevious = () => {
-    if (openModal !== null) {
-      const prevIndex = openModal === 0 ? 5 : openModal - 1
-      setOpenModal(prevIndex)
-    }
-  }
+  const projects = projectsData(theme)
 
-  const handleNext = () => {
-    if (openModal !== null) {
-      const nextIndex = openModal === 5 ? 0 : openModal + 1
-      setOpenModal(nextIndex)
-    }
-  }
-
-  // 카드와 모달에 적용할 스타일
   const cardStyle = {
     backgroundColor: theme === 'dark' ? '#2c2d2e' : '#e6e6e6',
     color: theme === 'dark' ? '#e6e6e6' : '#191f28',
   }
 
-  const projects = projectsData(theme)
+  const handlePrevious = () => {
+    if (openModal !== null) {
+      setOpenModal((openModal - 1 + projects.length) % projects.length)
+    }
+  }
+
+  const handleNext = () => {
+    if (openModal !== null) {
+      setOpenModal((openModal + 1) % projects.length)
+    }
+  }
 
   return (
     <section className='flex justify-center mb-12 md:mb-20 px-4'>

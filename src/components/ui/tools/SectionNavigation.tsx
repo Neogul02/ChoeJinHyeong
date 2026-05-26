@@ -8,7 +8,6 @@ import { useThemeStore } from '@/store/useThemeStore'
 const sections = [
   { id: 'intro', label: 'Intro' },
   { id: 'stack', label: 'Stack' },
-  // { id: 'career', label: '이력' },
   { id: 'activities', label: 'Activities' },
   { id: 'projects', label: 'Project' },
   { id: 'certification', label: 'Certification' },

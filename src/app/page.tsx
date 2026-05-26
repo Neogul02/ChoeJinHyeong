@@ -1,6 +1,5 @@
 'use client'
 
-import React from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 
@@ -10,7 +9,6 @@ import SectionLine from '@/components/ui/tools/SectionLine'
 import SectionLineDivided from '@/components/ui/tools/SectionLineDivided'
 
 import Stack from '@/components/sections/Stack'
-import Career from '@/components/sections/Career'
 import Activities from '@/components/sections/Activities'
 import Projects from '@/components/sections/Projects'
 import Education from '@/components/sections/Education'
@@ -78,18 +76,6 @@ export default function Home() {
           <Stack />
         </div>
       </motion.section>
-
-      {/* 이력 섹션 */}
-      {/* <motion.section
-        className='max-w-5xl mx-auto py-16 px-4'
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.5 }}>
-        <SectionLineDivided text='이력' />
-        <div id='career'>
-          <Career />
-        </div>
-      </motion.section> */}
 
       {/* 대외활동 섹션 */}
       <motion.section
