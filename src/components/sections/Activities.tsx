@@ -1,108 +1,25 @@
-// 기술 스택
-export default function Activities() {
+import { createServerSupabaseClient } from '@/lib/supabase-server'
+import { ActivityEntry } from '@/lib/supabase'
+import SectionEntry from '@/components/ui/SectionEntry'
+
+export default async function Activities() {
+  const supabase = await createServerSupabaseClient()
+  const { data } = await supabase.from('activities').select('*').order('sort_order')
+  const entries = (data as ActivityEntry[]) ?? []
+
   return (
     <section className='mb-12 md:mb-20'>
-      {/* Meta 인턴십 */}
-      {/* <div className='flex flex-row justify-between my-10 ml-10'>
-        <div className='w-1/2 pr-6'>
-          <div className='text-[22px] font-bold'>Intern In Meta</div>
-          <div className='text-[16px] font-bold ml-3'>
-            <div>2025.07 ~ 2025.08</div>
-            <div className='font-light'>응용SW개발 파트</div>
-          </div>
-        </div>
-        <div className='w-full md:w-1/2 md:pl-5 md:pt-3 pr-4 md:pr-15'>
-          <div className='text-sm md:text-[16px] font-medium'>
-            <div>
-              · React Hooks, Recoil 상태관리를 활용한 효율적인 컴포넌트 설계 및 상태 관리
-              <br />
-              <br />· JEST를 이용한 단위 테스트 작성 및 Storybook을 통한 컴포넌트 테스트 환경 구축
-              <br />
-              <br />· GitHub Pages, Netlify를 활용한 배포 및 CI/CD 파이프라인 학습
-            </div>
-          </div>
-        </div>
-      </div> */}
-
-      {/* 해커톤 + */}
-      {/* <div className='flex flex-col md:flex-row justify-between my-8 md:my-10 ml-4 md:ml-10'>
-        <div className='w-full md:w-1/2 md:pr-6 mb-4 md:mb-0'>
-          <div className='text-lg md:text-[22px] font-bold'>2025 멋쟁이사자처럼 13기: 중앙 해커톤</div>
-          <div className='text-sm md:text-[16px] font-bold ml-3'>
-            <div>2024.11 ~ 2026.02</div>
-            <div className='font-light'>부회장 · 프론트엔드운영진</div>
-            <div className='font-light'>2025 강남대학교 우수 동아리 선정</div>
-          </div>
-        </div>
-        <div className='w-full md:w-1/2 md:pl-5 md:pt-3 pr-4 md:pr-15'>
-          <div className='text-sm md:text-[16px] font-medium'>
-            <div>
-              · 강남대학교 멋쟁이사자처럼 13기 프론트엔드 파트 운영진으로 활동
-              <br/>
-              <br />· 매주 목요일 아기사자들에게 개발 지식을 공유하는{' '}
-              <a
-                href='https://bit.ly/4lKIXPW'
-                target='_blank'
-                rel='noopener noreferrer'
-                className='text-mainblue hover:underline'>
-                프론트엔드 세션
-              </a>
-              을 기획, 진행 <br />
-              <br />· 대학 연합 아이디어톤, 중앙 해커톤, 어흥콘, 간지톤 등 팀원들과 협업하며 실전 프로젝트를 경험
-            </div>
-          </div>
-        </div>
-      </div> */}
-      
-
-      {/* 멋사 */}
-      <div className='flex flex-col md:flex-row justify-between my-8 md:my-10 ml-4 md:ml-10'>
-        <div className='w-full md:w-1/2 md:pr-6 mb-4 md:mb-0'>
-          <div className='text-lg md:text-[22px] font-bold'>멋쟁이사자처럼 13기</div>
-          <div className='text-sm md:text-[16px] font-bold ml-3'>
-            <div>2024.11 ~ 2026.02</div>
-            <div className='font-light'>부회장 · 프론트엔드운영진</div>
-            <div className='font-light'>2025 강남대학교 우수 동아리 선정</div>
-          </div>
-        </div>
-        <div className='w-full md:w-1/2 md:pl-5 md:pt-3 pr-4 md:pr-15'>
-          <div className='text-sm md:text-[16px] font-medium'>
-            <div>
-              · 강남대학교 멋쟁이사자처럼 13기 프론트엔드 파트 운영진으로 활동
-              <br/>
-              <br />· 매주 목요일 아기사자들에게 개발 지식을 공유하는{' '}
-              <a
-                href='https://bit.ly/4lKIXPW'
-                target='_blank'
-                rel='noopener noreferrer'
-                className='text-mainblue hover:underline'>
-                프론트엔드 세션
-              </a>
-              을 기획, 진행 <br />
-              <br />· 대학 연합 아이디어톤, 중앙 해커톤, 어흥콘, 간지톤 등 팀원들과 협업하며 실전 프로젝트를 경험
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* 경기청년 갭이어 */}
-      <div className='flex flex-col md:flex-row justify-between my-8 md:my-10 ml-4 md:ml-10'>
-        <div className='w-full md:w-1/2 md:pr-6 mb-4 md:mb-0'>
-          <div className='text-lg md:text-[22px] font-bold'>경기청년 갭이어</div>
-          <div className='text-sm md:text-[16px] font-bold ml-3'>
-            <div>2024.05 ~ 2024.11</div>
-            <div className='font-light'>경기도일자리재단 - 개인</div>
-          </div>
-        </div>
-        <div className='w-full md:w-1/2 md:pl-5 md:pt-3 pr-4 md:pr-15'>
-          <div className='text-sm md:text-[16px] font-medium'>
-            <div>
-              · 경기도 일자리재단 주관, 경기청년 갭이어 프로젝트에 개인으로 참여 <br />
-              
-            </div>
-          </div>
-        </div>
-      </div>
+      {entries.map((entry) => (
+        <SectionEntry
+          key={entry.id}
+          title={entry.organization}
+          period={entry.period}
+          subtitle={entry.role}>
+          {entry.content_md && (
+            <div className='whitespace-pre-line'>{entry.content_md}</div>
+          )}
+        </SectionEntry>
+      ))}
     </section>
   )
 }

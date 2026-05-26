@@ -1,6 +1,5 @@
 'use client'
 
-import React from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import CustomRotatingIntro from '@/components/ui/CustomRotatingIntro'
@@ -16,7 +15,7 @@ export default function Contact() {
         duration: 0.5,
         ease: 'easeOut',
       }}>
-      <section className='flex flex-col-reverse md:flex-row items-center max-w-5xl mx-auto mt-25 px-4 select-none'>
+      <section className='flex flex-col-reverse md:flex-row items-center max-w-5xl mx-auto mt-20 md:mt-24 px-4 select-none'>
         {/* 텍스트 영역 */}
         <div className='flex-1 z-10 mt-6 md:mt-0'>
           <CustomRotatingIntro />
@@ -35,7 +34,7 @@ export default function Contact() {
         </div>
       </section>
 
-      <section className='flex flex-col text-[20px] font-bold p-[16px] max-w-5xl mx-auto select-none'>
+      <section className='flex flex-col text-[20px] font-bold p-4 max-w-5xl mx-auto select-none'>
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
@@ -59,12 +58,10 @@ export default function Contact() {
       </section>
 
       <motion.section
-        className='max-w-5xl mx-auto px-4 md:px-8 py-8 md:py-30'
+        className='max-w-5xl mx-auto px-4 md:px-8 py-8 md:py-24'
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.5 }}>
-        {/* <h2 className='text-xl md:text-2xl font-bold mb-6 md:mb-8'>자기소개</h2> */}
-
         <div className='space-y-4 md:space-y-6 text-sm md:text-base leading-relaxed text-center'>
           <p>
             안녕하세요, <span className='font-semibold '>경험을 설계하는 개발자 최진형</span>입니다.
@@ -80,14 +77,9 @@ export default function Contact() {
             아직 최신 기술이 닿지 않은 영역을 찾아 AI 모델과 소프트웨어를 빠르게 개발하고 실험합니다.
           </p>
 
-          {/* <p>
-            <span className='font-semibold '>&quot;같이 일하면 재밌는 사람, 같이 일하고 싶은 사람&quot;</span>이라는 말을 많이 듣습니다. <br />
-            저 또한 정적이지 않고 동적인 팀원이 되고자 노력합니다.
-          </p> */}
-
           <p>
             <span className='font-semibold '>
-              현재는 삼성청년SW·AI아카데미(SSAFY) 15기 Java 트랙을 수료중이며 <br/>
+              현재는 삼성청년SW·AI아카데미(SSAFY) 15기 Java 트랙을 수료중이며 <br />
               개발자로서의 역량을 키우고 있습니다.
             </span>
           </p>
