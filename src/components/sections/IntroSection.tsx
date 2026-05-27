@@ -33,16 +33,13 @@ export default function IntroSection() {
           <br />
           기술은 도구일 뿐, 개발의 목표는 사람에게 닿는 경험이라 생각합니다.
         </p>
-        <button
-          className='cursor-pointer text-base font-semibold md:text-[20px] text-gray-400 hover:text-[#3182f6] transition-colors my-16'
-          onClick={() =>
-            window.open(
-              'https://www.figma.com/design/WBaXINRDszR2CRStJTHpbI/choejinhyeong_resume?node-id=0-1&t=7DZc4iYEwVO0HI1X-1',
-              '_blank'
-            )
-          }>
+        <a
+          href='https://www.figma.com/design/WBaXINRDszR2CRStJTHpbI/choejinhyeong_resume?node-id=0-1&t=7DZc4iYEwVO0HI1X-1'
+          target='_blank'
+          rel='noopener noreferrer'
+          className='text-base font-semibold md:text-[20px] text-gray-400 hover:text-[#3182f6] transition-colors my-16 text-center'>
           이력서 보기
-        </button>
+        </a>
         <p className='text-center text-gray-400'>(PC, Chrome에서 보시는 것을 권장드립니다.)</p>
       </motion.section>
     </div>
