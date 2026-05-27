@@ -45,3 +45,8 @@ next-env.d.ts
 
 # Claude Code
 .mcp.json
+
+# Dev-only files (excluded from main)
+supabase/
+AGENTS.md
+**/AGENTS.md
