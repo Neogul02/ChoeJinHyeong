@@ -1,90 +1,41 @@
-'use client'
+import Link from 'next/link'
 
-import { useEffect, useState } from 'react'
-import { createClient, Project } from '@/lib/supabase'
-
-const EMPTY: Omit<Project, 'id' | 'updated_at'> = {
-  title: '', period: '', image: '', bg_dark: '', bg_light: '',
-  sort_order: 0, content_md: '', is_active: true,
-}
+const MODAL_FILES = [
+  { title: 'DeunDeun', file: 'src/components/modals/projects/DeunDeunModal.tsx' },
+  { title: 'Knock', file: 'src/components/modals/projects/KnockModal.tsx' },
+  { title: 'Portfolio', file: 'src/components/modals/projects/PortfolioModal.tsx' },
+  { title: 'Hanamory', file: 'src/components/modals/projects/HanamoryModal.tsx' },
+  { title: '도망가자', file: 'src/components/modals/projects/RunawayModal.tsx' },
+  { title: 'LikeionKNU', file: 'src/components/modals/projects/LikeionModal.tsx' },
+]
 
 export default function AdminProjects() {
-  const [projects, setProjects] = useState<Project[]>([])
-  const [editing, setEditing] = useState<Partial<Project> | null>(null)
-  const [saving, setSaving] = useState(false)
-  const supabase = createClient()
-
-  const load = async () => {
-    const { data } = await supabase.from('projects').select('*').order('sort_order')
-    setProjects((data as Project[]) ?? [])
-  }
-
-  useEffect(() => { load() }, [])
-
-  const save = async () => {
-    if (!editing) return
-    setSaving(true)
-    await supabase.from('projects').upsert({ ...editing, updated_at: new Date().toISOString() })
-    setSaving(false)
-    setEditing(null)
-    load()
-  }
-
-  const remove = async (id: number) => {
-    if (!confirm('삭제하시겠습니까?')) return
-    await supabase.from('projects').delete().eq('id', id)
-    load()
-  }
-
   return (
     <div>
-      <div className='flex items-center justify-between mb-6'>
-        <h1 className='text-2xl font-bold'>Projects</h1>
-        <button onClick={() => setEditing(EMPTY)} className='bg-[#3182f6] text-white px-4 py-2 rounded-lg text-sm'>+ 추가</button>
-      </div>
+      <h1 className='text-2xl font-bold mb-2'>Projects</h1>
+      <p className='text-sm opacity-50 mb-8'>
+        프로젝트는 코드에서 직접 관리됩니다. 아래 파일을 수정하세요.
+      </p>
 
-      {editing && (
-        <div className='border rounded-xl p-6 mb-6 space-y-3'>
-          <h2 className='font-semibold text-lg'>{editing.id ? '수정' : '새 프로젝트'}</h2>
-          <input placeholder='제목' value={editing.title ?? ''} onChange={(e) => setEditing({ ...editing, title: e.target.value })} className='w-full border rounded-lg px-3 py-2 text-sm bg-transparent' />
-          <input placeholder='기간 (예: 2024.10 ~ 2024.12)' value={editing.period ?? ''} onChange={(e) => setEditing({ ...editing, period: e.target.value })} className='w-full border rounded-lg px-3 py-2 text-sm bg-transparent' />
-          <input placeholder='이미지 경로 (예: /images/project/main.png)' value={editing.image ?? ''} onChange={(e) => setEditing({ ...editing, image: e.target.value })} className='w-full border rounded-lg px-3 py-2 text-sm bg-transparent' />
-          <div className='flex gap-3'>
-            <input placeholder='bg_dark (hex)' value={editing.bg_dark ?? ''} onChange={(e) => setEditing({ ...editing, bg_dark: e.target.value })} className='w-full border rounded-lg px-3 py-2 text-sm bg-transparent' />
-            <input placeholder='bg_light (hex)' value={editing.bg_light ?? ''} onChange={(e) => setEditing({ ...editing, bg_light: e.target.value })} className='w-full border rounded-lg px-3 py-2 text-sm bg-transparent' />
-          </div>
-          <input type='number' placeholder='순서' value={editing.sort_order ?? 0} onChange={(e) => setEditing({ ...editing, sort_order: Number(e.target.value) })} className='w-full border rounded-lg px-3 py-2 text-sm bg-transparent' />
-          <textarea
-            placeholder='내용 (Markdown)'
-            value={editing.content_md ?? ''}
-            onChange={(e) => setEditing({ ...editing, content_md: e.target.value })}
-            rows={12}
-            className='w-full border rounded-lg px-3 py-2 text-sm bg-transparent font-mono'
-          />
-          <div className='flex items-center gap-2'>
-            <input type='checkbox' id='active' checked={editing.is_active ?? true} onChange={(e) => setEditing({ ...editing, is_active: e.target.checked })} />
-            <label htmlFor='active' className='text-sm'>활성화</label>
-          </div>
-          <div className='flex gap-3'>
-            <button onClick={save} disabled={saving} className='bg-[#3182f6] text-white px-4 py-2 rounded-lg text-sm disabled:opacity-50'>{saving ? '저장 중...' : '저장'}</button>
-            <button onClick={() => setEditing(null)} className='border px-4 py-2 rounded-lg text-sm'>취소</button>
-          </div>
-        </div>
-      )}
-
-      <div className='space-y-3'>
-        {projects.map((p) => (
-          <div key={p.id} className='border rounded-xl p-4 flex items-center justify-between'>
+      <div className='space-y-2'>
+        {MODAL_FILES.map((item) => (
+          <div key={item.file} className='border border-[var(--foreground)]/10 rounded-2xl p-4 flex items-center justify-between hover:border-[var(--foreground)]/20 transition-colors'>
             <div>
-              <div className='font-medium'>{p.title}</div>
-              <div className='text-sm text-gray-400'>{p.period} · 순서: {p.sort_order} {!p.is_active && '· 비활성'}</div>
-            </div>
-            <div className='flex gap-2'>
-              <button onClick={() => setEditing(p)} className='text-sm border px-3 py-1 rounded-lg hover:border-[#3182f6] hover:text-[#3182f6]'>수정</button>
-              <button onClick={() => remove(p.id)} className='text-sm border px-3 py-1 rounded-lg hover:border-red-500 hover:text-red-500'>삭제</button>
+              <div className='font-medium'>{item.title}</div>
+              <div className='text-xs font-mono opacity-40 mt-0.5'>{item.file}</div>
             </div>
           </div>
         ))}
+      </div>
+
+      <div className='mt-8 border border-[var(--foreground)]/10 rounded-2xl p-5'>
+        <div className='text-sm font-semibold mb-2'>카드 목록 순서 변경</div>
+        <p className='text-xs opacity-50 leading-relaxed'>
+          <code className='opacity-80'>src/components/sections/projectsData.ts</code> 파일에서
+          배열 순서를 바꾸면 카드 순서가 변경됩니다.
+          <br />
+          GIF 추가는 각 모달 파일의 주석 처리된 {'<img>'} 태그를 해제하세요.
+        </p>
       </div>
     </div>
   )

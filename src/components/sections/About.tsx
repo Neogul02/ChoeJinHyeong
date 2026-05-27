@@ -7,7 +7,7 @@ export default function Activities() {
         <Link
           href='/about'
           className='w-full md:w-[50%] text-[22px] font-bold text-left transition-colors duration-300 hover:text-[#3182f6]'>
-          <div>{`About ->`}</div>
+          <div>{`About >`}</div>
         </Link>
         <div
           className='w-full md:w-[50%] h-px rounded-full opacity-60'

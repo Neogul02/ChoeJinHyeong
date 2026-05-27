@@ -42,3 +42,6 @@ next-env.d.ts
 
 # oh-my-claudecode session state
 .omc/
+
+# Claude Code
+.mcp.json

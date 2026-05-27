@@ -19,11 +19,11 @@ export default async function Stack() {
         현재 공부하고 있는 기술 스택은 🍅 표시를 해두었어요, 항상 쉬지 않고 새로운 기술을 탐구하고 있습니다.
       </div>
 
-      <div className='flex flex-col md:flex-row justify-between my-4 md:my-6 ml-4 md:ml-10 mr-4 md:mr-0'>
-        {(['Frontend', 'Backend'] as const).map((cat) => (
-          <div key={cat} className='w-full md:w-1/2 md:pr-6 mb-6 md:mb-0'>
-            <div className='text-base md:text-[22px] font-bold'>{cat}</div>
-            <div className='text-sm md:text-[16px] ml-2 md:ml-3 space-y-1'>
+      <div className='flex flex-col md:flex-row justify-between my-4 md:my-5 ml-4 md:ml-10 mr-4 md:mr-0'>
+        {(['Frontend', 'Backend'] as const).map((cat, idx) => (
+          <div key={cat} className={`w-full md:w-1/2 mb-6 mt-6 md:mb-6 md:mt-6 ${idx === 0 ? 'pr-2 md:pr-6' : 'pl-2 md:pl-10'}`}>
+            <div className='text-base md:text-[22px] font-bold mb-3'>{cat}</div>
+            <div className='text-sm md:text-[16px] ml-2 md:ml-3 space-y-2'>
               {grouped[cat].map((item) => (
                 <div key={item.id}> · {item.name}{item.is_learning ? ' 🍅' : ''}</div>
               ))}
@@ -32,11 +32,11 @@ export default async function Stack() {
         ))}
       </div>
 
-      <div className='flex flex-col md:flex-row justify-between my-6 md:my-8 ml-4 md:ml-10 mr-4 md:mr-0'>
-        {(['Infra', 'Cooperation'] as const).map((cat) => (
-          <div key={cat} className='w-full md:w-1/2 md:pr-6 mb-6 md:mb-0 last:md:pr-0 last:md:pl-4'>
-            <div className='text-base md:text-[22px] font-bold'>{cat}</div>
-            <div className='text-sm md:text-[16px] ml-2 md:ml-3 space-y-1'>
+      <div className='flex flex-col md:flex-row justify-between my-6 md:my-10 ml-4 md:ml-10 mr-4 md:mr-0'>
+        {(['Infra', 'Cooperation'] as const).map((cat, idx) => (
+          <div key={cat} className={`w-full md:w-1/2 mb-6 md:mb-0 ${idx === 0 ? 'pr-2 md:pr-6' : 'pl-2 md:pl-10'}`}>
+            <div className='text-base md:text-[22px] font-bold mb-3'>{cat}</div>
+            <div className='text-sm md:text-[16px] ml-2 md:ml-3 space-y-2'>
               {grouped[cat].map((item) => (
                 <div key={item.id}>· {item.name}{item.is_learning ? ' 🍅' : ''}</div>
               ))}
