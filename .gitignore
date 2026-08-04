@@ -43,6 +43,9 @@ next-env.d.ts
 # oh-my-claudecode session state
 .omc/
 
+# codegraph local index
+.codegraph/
+
 # Claude Code
 .mcp.json
 
